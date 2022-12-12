@@ -1,0 +1,6 @@
+﻿  Main.c
+  Source.c
+  Generating Code...
+D:\Temp\PI\Aula 8 - Ficheiros Binários - Arrays\Source.c(29): warning C4715: 'SaveArray': not all control paths return a value
+D:\Temp\PI\Aula 8 - Ficheiros Binários - Arrays\Source.c(48): warning C4715: 'ShowFile': not all control paths return a value
+  Aula 8 - Ficheiros Binários - Arrays.vcxproj -> D:\Temp\PI\Debug\Aula 8 - Ficheiros Binários - Arrays.exe

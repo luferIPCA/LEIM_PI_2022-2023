@@ -1,0 +1,273 @@
+.TH "D:/Temp/PI/AulasPI/Aula 6 -Arrays/Header.h" 3 "Fri Oct 28 2022" "Version 1.0" "Aulas de PI - EIM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/Temp/PI/AulasPI/Aula 6 -Arrays/Header.h \- Assinaturas de funções e Tipos de Dados Structs\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBpessoa\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMAXNOME\fP   50"
+.br
+.ti -1c
+.RI "#define \fBMAX\fP   5"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBpessoa\fP \fBpessoa\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBboolean\fP { \fBfalse\fP, \fBtrue\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBmostraPessoas\fP (\fBpessoa\fP p[], int size)"
+.br
+.ti -1c
+.RI "\fBpessoa\fP \fBexistePessoa\fP (\fBpessoa\fP p[], int size, char nome[])"
+.br
+.ti -1c
+.RI "int * \fBgetArrayPares\fP (const int v[], int size)"
+.br
+.ti -1c
+.RI "int * \fBgetArrayParesII\fP (int *v, int size)"
+.br
+.ti -1c
+.RI "void \fBiniciaArray\fP (int v[], const int size)"
+.br
+.ti -1c
+.RI "void \fBmostraArray\fP (const int v[], const int size)"
+.br
+.ti -1c
+.RI "char * \fBallChar\fP (const char v1[], char ch)"
+.br
+.ti -1c
+.RI "\fBboolean\fP \fBexisteChar\fP (const char v1[], char ch)"
+.br
+.ti -1c
+.RI "void \fBinicializaArray\fP (char n[], int size, char ch)"
+.br
+.ti -1c
+.RI "\fBboolean\fP \fBexisteValor\fP (int v[], int size, int valor)"
+.br
+.ti -1c
+.RI "int \fBondeEstaChar\fP (char v[], int size, char ch)"
+.br
+.ti -1c
+.RI "int \fBsomaArray\fP (int valores[], int size)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Assinaturas de funções e Tipos de Dados Structs\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+lufer 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2022 
+.RE
+.PP
+
+.PP
+Definition in file \fBHeader\&.h\fP\&.
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define MAX   5"
+
+.PP
+Definition at line \fB11\fP of file \fBHeader\&.h\fP\&.
+.SS "#define MAXNOME   50"
+
+.PP
+Definition at line \fB10\fP of file \fBHeader\&.h\fP\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBpessoa\fP \fBpessoa\fP"
+
+.PP
+Definition at line \fB23\fP of file \fBHeader\&.h\fP\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBboolean\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIfalse \fP\fP
+.TP
+\fB\fItrue \fP\fP
+.PP
+Definition at line \fB16\fP of file \fBHeader\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "char * allChar (const char v1[], char ch)"
+Devolve todos os caracteres existentes num array de caracteres\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIv1\fP 
+.br
+\fIch\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB76\fP of file \fBStrings\&.c\fP\&.
+.SS "\fBboolean\fP existeChar (const char v1[], char ch)"
+
+.PP
+Definition at line \fB43\fP of file \fBStrings\&.c\fP\&.
+.SS "\fBpessoa\fP existePessoa (\fBpessoa\fP p[], int size, char nome[])"
+Procura a pessoa com determinado nome!
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP 
+.br
+\fIsize\fP 
+.br
+\fInome\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB133\fP of file \fBFuncoes\&.c\fP\&.
+.SS "\fBboolean\fP existeValor (int v[], int size, int valor)"
+
+.SS "int * getArrayPares (const int v[], int size)"
+Devolve arrays de valores pares!
+.PP
+\fBParameters\fP
+.RS 4
+\fIv\fP 
+.br
+\fIsize\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB56\fP of file \fBFuncoes\&.c\fP\&.
+.SS "int * getArrayParesII (int * v, int size)"
+
+.PP
+Definition at line \fB70\fP of file \fBFuncoes\&.c\fP\&.
+.SS "void iniciaArray (int v[], const int size)"
+Coloca valor inicial em todas as posições de um array\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIv\fP 
+.br
+\fIsize\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB104\fP of file \fBFuncoes\&.c\fP\&.
+.SS "void inicializaArray (char n[], int size, char ch)"
+Inicializa um array com determinado caracter\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIn\fP 
+.br
+\fIsize\fP 
+.br
+\fIch\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB19\fP of file \fBStrings\&.c\fP\&.
+.SS "void mostraArray (const int v[], const int size)"
+Apresenta conteúdo do array no ecrã
+.PP
+\fBParameters\fP
+.RS 4
+\fIv\fP 
+.br
+\fIsize\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB90\fP of file \fBFuncoes\&.c\fP\&.
+.SS "void mostraPessoas (\fBpessoa\fP p[], int size)"
+Apresenta todas as pessoas que constam um array!
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP 
+.br
+\fIsize\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB118\fP of file \fBFuncoes\&.c\fP\&.
+.SS "int ondeEstaChar (char v[], int size, char ch)"
+Indica a posição onde se encontra determinado caracter num array de caracteres\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIv\fP 
+.br
+\fIsize\fP 
+.br
+\fIch\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB34\fP of file \fBStrings\&.c\fP\&.
+.SS "int somaArray (int valores[], int size)"
+
+.PP
+Definition at line \fB146\fP of file \fBFuncoes\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Aulas de PI - EIM from the source code\&.

@@ -1,0 +1,341 @@
+\hypertarget{_header_8h}{}\doxysection{D\+:/\+Temp/\+PI/\+Aulas\+PI/\+Aula 6 -\/Arrays/\+Header.h File Reference}
+\label{_header_8h}\index{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Header.h@{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Header.h}}
+
+
+Assinaturas de funções e Tipos de Dados Structs.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpessoa}{pessoa}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_header_8h_ac8d0b8208abd9d034f8773dce910b3f5}{MAXNOME}}~50
+\item 
+\#define \mbox{\hyperlink{_header_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}~5
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structpessoa}{pessoa}} \mbox{\hyperlink{_header_8h_ac082d5cee36c7cfeb708ee6b04e8e903}{pessoa}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \{ \mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c}{false}}
+, \mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275eda08f175a5505a10b9ed657defeb050e4b}{true}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_header_8h_a0f5448f6cd703cab44b41e2b9b572790}{mostra\+Pessoas}} (\mbox{\hyperlink{structpessoa}{pessoa}} p\mbox{[}$\,$\mbox{]}, int size)
+\item 
+\mbox{\hyperlink{structpessoa}{pessoa}} \mbox{\hyperlink{_header_8h_a95715297ae648aad012dc21daa04d917}{existe\+Pessoa}} (\mbox{\hyperlink{structpessoa}{pessoa}} p\mbox{[}$\,$\mbox{]}, int size, char nome\mbox{[}$\,$\mbox{]})
+\item 
+int $\ast$ \mbox{\hyperlink{_header_8h_aa5ac60bb921b4c54a9039d846c8a399f}{get\+Array\+Pares}} (const int v\mbox{[}$\,$\mbox{]}, int size)
+\item 
+int $\ast$ \mbox{\hyperlink{_header_8h_ad6bd7cb55b5a2bca3c93279cae2e8d16}{get\+Array\+Pares\+II}} (int $\ast$v, int size)
+\item 
+void \mbox{\hyperlink{_header_8h_a93879f75c7a113e23a33561fa0ae0df5}{inicia\+Array}} (int v\mbox{[}$\,$\mbox{]}, const int size)
+\item 
+void \mbox{\hyperlink{_header_8h_acba33774b86ce13b162494309aa91f0c}{mostra\+Array}} (const int v\mbox{[}$\,$\mbox{]}, const int size)
+\item 
+char $\ast$ \mbox{\hyperlink{_header_8h_ac46b192e720576aaeec8864ed0ad507b}{all\+Char}} (const char v1\mbox{[}$\,$\mbox{]}, char ch)
+\item 
+\mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{_header_8h_a8396d60bd2607c3f3e7b774ea21a8bc1}{existe\+Char}} (const char v1\mbox{[}$\,$\mbox{]}, char ch)
+\item 
+void \mbox{\hyperlink{_header_8h_a4a4b7eadce47aaaf72dd2b9f94eae19a}{inicializa\+Array}} (char n\mbox{[}$\,$\mbox{]}, int size, char ch)
+\item 
+\mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{_header_8h_a4bab2f2b1478e6d87cd3f4b5cb1d3d1b}{existe\+Valor}} (int v\mbox{[}$\,$\mbox{]}, int size, int valor)
+\item 
+int \mbox{\hyperlink{_header_8h_a95a0363c9608b85f0a4c2c5088d5aab5}{onde\+Esta\+Char}} (char v\mbox{[}$\,$\mbox{]}, int size, char ch)
+\item 
+int \mbox{\hyperlink{_header_8h_a6cd9ca8e3028cc2b956e6419a31c2774}{soma\+Array}} (int valores\mbox{[}$\,$\mbox{]}, int size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Assinaturas de funções e Tipos de Dados Structs. 
+
+\begin{DoxyAuthor}{Author}
+lufer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_header_8h_source}{Header.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_header_8h_a392fb874e547e582e9c66a08a1f23326}\label{_header_8h_a392fb874e547e582e9c66a08a1f23326}} 
+\index{Header.h@{Header.h}!MAX@{MAX}}
+\index{MAX@{MAX}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define MAX~5}
+
+
+
+Definition at line \mbox{\hyperlink{_header_8h_source_l00011}{11}} of file \mbox{\hyperlink{_header_8h_source}{Header.\+h}}.
+
+\mbox{\Hypertarget{_header_8h_ac8d0b8208abd9d034f8773dce910b3f5}\label{_header_8h_ac8d0b8208abd9d034f8773dce910b3f5}} 
+\index{Header.h@{Header.h}!MAXNOME@{MAXNOME}}
+\index{MAXNOME@{MAXNOME}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{MAXNOME}{MAXNOME}}
+{\footnotesize\ttfamily \#define MAXNOME~50}
+
+
+
+Definition at line \mbox{\hyperlink{_header_8h_source_l00010}{10}} of file \mbox{\hyperlink{_header_8h_source}{Header.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_header_8h_ac082d5cee36c7cfeb708ee6b04e8e903}\label{_header_8h_ac082d5cee36c7cfeb708ee6b04e8e903}} 
+\index{Header.h@{Header.h}!pessoa@{pessoa}}
+\index{pessoa@{pessoa}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{pessoa}{pessoa}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpessoa}{pessoa}} \mbox{\hyperlink{structpessoa}{pessoa}}}
+
+
+
+Definition at line \mbox{\hyperlink{_header_8h_source_l00023}{23}} of file \mbox{\hyperlink{_header_8h_source}{Header.\+h}}.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}\label{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}} 
+\index{Header.h@{Header.h}!boolean@{boolean}}
+\index{boolean@{boolean}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{boolean}{boolean}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{false@{false}!Header.h@{Header.h}}\index{Header.h@{Header.h}!false@{false}}}\mbox{\Hypertarget{_header_8h_a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c}\label{_header_8h_a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c}} 
+false&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{true@{true}!Header.h@{Header.h}}\index{Header.h@{Header.h}!true@{true}}}\mbox{\Hypertarget{_header_8h_a7c6368b321bd9acd0149b030bb8275eda08f175a5505a10b9ed657defeb050e4b}\label{_header_8h_a7c6368b321bd9acd0149b030bb8275eda08f175a5505a10b9ed657defeb050e4b}} 
+true&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_header_8h_source_l00016}{16}} of file \mbox{\hyperlink{_header_8h_source}{Header.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_header_8h_ac46b192e720576aaeec8864ed0ad507b}\label{_header_8h_ac46b192e720576aaeec8864ed0ad507b}} 
+\index{Header.h@{Header.h}!allChar@{allChar}}
+\index{allChar@{allChar}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{allChar()}{allChar()}}
+{\footnotesize\ttfamily char $\ast$ all\+Char (\begin{DoxyParamCaption}\item[{const char}]{v1\mbox{[}$\,$\mbox{]},  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+Devolve todos os caracteres existentes num array de caracteres.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & \\
+\hline
+{\em ch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_strings_8c_source_l00076}{76}} of file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_a8396d60bd2607c3f3e7b774ea21a8bc1}\label{_header_8h_a8396d60bd2607c3f3e7b774ea21a8bc1}} 
+\index{Header.h@{Header.h}!existeChar@{existeChar}}
+\index{existeChar@{existeChar}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{existeChar()}{existeChar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} existe\+Char (\begin{DoxyParamCaption}\item[{const char}]{v1\mbox{[}$\,$\mbox{]},  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_strings_8c_source_l00043}{43}} of file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_a95715297ae648aad012dc21daa04d917}\label{_header_8h_a95715297ae648aad012dc21daa04d917}} 
+\index{Header.h@{Header.h}!existePessoa@{existePessoa}}
+\index{existePessoa@{existePessoa}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{existePessoa()}{existePessoa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpessoa}{pessoa}} existe\+Pessoa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpessoa}{pessoa}}}]{p\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{char}]{nome\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Procura a pessoa com determinado nome!
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em size} & \\
+\hline
+{\em nome} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00133}{133}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_a4bab2f2b1478e6d87cd3f4b5cb1d3d1b}\label{_header_8h_a4bab2f2b1478e6d87cd3f4b5cb1d3d1b}} 
+\index{Header.h@{Header.h}!existeValor@{existeValor}}
+\index{existeValor@{existeValor}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{existeValor()}{existeValor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} existe\+Valor (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_header_8h_aa5ac60bb921b4c54a9039d846c8a399f}\label{_header_8h_aa5ac60bb921b4c54a9039d846c8a399f}} 
+\index{Header.h@{Header.h}!getArrayPares@{getArrayPares}}
+\index{getArrayPares@{getArrayPares}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{getArrayPares()}{getArrayPares()}}
+{\footnotesize\ttfamily int $\ast$ get\+Array\+Pares (\begin{DoxyParamCaption}\item[{const int}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Devolve arrays de valores pares!
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00056}{56}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_ad6bd7cb55b5a2bca3c93279cae2e8d16}\label{_header_8h_ad6bd7cb55b5a2bca3c93279cae2e8d16}} 
+\index{Header.h@{Header.h}!getArrayParesII@{getArrayParesII}}
+\index{getArrayParesII@{getArrayParesII}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{getArrayParesII()}{getArrayParesII()}}
+{\footnotesize\ttfamily int $\ast$ get\+Array\+Pares\+II (\begin{DoxyParamCaption}\item[{int $\ast$}]{v,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00070}{70}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_a93879f75c7a113e23a33561fa0ae0df5}\label{_header_8h_a93879f75c7a113e23a33561fa0ae0df5}} 
+\index{Header.h@{Header.h}!iniciaArray@{iniciaArray}}
+\index{iniciaArray@{iniciaArray}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{iniciaArray()}{iniciaArray()}}
+{\footnotesize\ttfamily void inicia\+Array (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]},  }\item[{const int}]{size }\end{DoxyParamCaption})}
+
+Coloca valor inicial em todas as posições de um array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00104}{104}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_a4a4b7eadce47aaaf72dd2b9f94eae19a}\label{_header_8h_a4a4b7eadce47aaaf72dd2b9f94eae19a}} 
+\index{Header.h@{Header.h}!inicializaArray@{inicializaArray}}
+\index{inicializaArray@{inicializaArray}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{inicializaArray()}{inicializaArray()}}
+{\footnotesize\ttfamily void inicializa\+Array (\begin{DoxyParamCaption}\item[{char}]{n\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+Inicializa um array com determinado caracter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \\
+\hline
+{\em size} & \\
+\hline
+{\em ch} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_strings_8c_source_l00019}{19}} of file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_acba33774b86ce13b162494309aa91f0c}\label{_header_8h_acba33774b86ce13b162494309aa91f0c}} 
+\index{Header.h@{Header.h}!mostraArray@{mostraArray}}
+\index{mostraArray@{mostraArray}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{mostraArray()}{mostraArray()}}
+{\footnotesize\ttfamily void mostra\+Array (\begin{DoxyParamCaption}\item[{const int}]{v\mbox{[}$\,$\mbox{]},  }\item[{const int}]{size }\end{DoxyParamCaption})}
+
+Apresenta conteúdo do array no ecrã
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00090}{90}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_a0f5448f6cd703cab44b41e2b9b572790}\label{_header_8h_a0f5448f6cd703cab44b41e2b9b572790}} 
+\index{Header.h@{Header.h}!mostraPessoas@{mostraPessoas}}
+\index{mostraPessoas@{mostraPessoas}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{mostraPessoas()}{mostraPessoas()}}
+{\footnotesize\ttfamily void mostra\+Pessoas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpessoa}{pessoa}}}]{p\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Apresenta todas as pessoas que constam um array!
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00118}{118}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_a95a0363c9608b85f0a4c2c5088d5aab5}\label{_header_8h_a95a0363c9608b85f0a4c2c5088d5aab5}} 
+\index{Header.h@{Header.h}!ondeEstaChar@{ondeEstaChar}}
+\index{ondeEstaChar@{ondeEstaChar}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{ondeEstaChar()}{ondeEstaChar()}}
+{\footnotesize\ttfamily int onde\+Esta\+Char (\begin{DoxyParamCaption}\item[{char}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+Indica a posição onde se encontra determinado caracter num array de caracteres.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+{\em ch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_strings_8c_source_l00034}{34}} of file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+
+\mbox{\Hypertarget{_header_8h_a6cd9ca8e3028cc2b956e6419a31c2774}\label{_header_8h_a6cd9ca8e3028cc2b956e6419a31c2774}} 
+\index{Header.h@{Header.h}!somaArray@{somaArray}}
+\index{somaArray@{somaArray}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{somaArray()}{somaArray()}}
+{\footnotesize\ttfamily int soma\+Array (\begin{DoxyParamCaption}\item[{int}]{valores\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00146}{146}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+

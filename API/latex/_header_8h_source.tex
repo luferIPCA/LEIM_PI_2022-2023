@@ -1,0 +1,45 @@
+\hypertarget{_header_8h_source}{}\doxysection{Header.\+h}
+\label{_header_8h_source}\index{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Header.h@{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Header.h}}
+\mbox{\hyperlink{_header_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00001}00001 \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00008}00008 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00010}\mbox{\hyperlink{_header_8h_ac8d0b8208abd9d034f8773dce910b3f5}{00010}} \textcolor{preprocessor}{\#define MAXNOME 50}}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00011}\mbox{\hyperlink{_header_8h_a392fb874e547e582e9c66a08a1f23326}{00011}} \textcolor{preprocessor}{\#define MAX 5}}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00012}00012 \textcolor{preprocessor}{\#pragma warning (disable: 4996)}}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00015}00015 \textcolor{preprocessor}{\#pragma region AssinaturasStructs}}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00016}\mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{00016}} \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{\textcolor{keyword}{false}, \textcolor{keyword}{true}\}\mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}};}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00018}\mbox{\hyperlink{structpessoa}{00018}} \textcolor{keyword}{struct }\mbox{\hyperlink{structpessoa}{pessoa}} \{}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00019}\mbox{\hyperlink{structpessoa_a0e171e163608cff29f04f3591744bb3e}{00019}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{structpessoa_a0e171e163608cff29f04f3591744bb3e}{nome}}[\mbox{\hyperlink{_header_8h_ac8d0b8208abd9d034f8773dce910b3f5}{MAXNOME}}];}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00020}\mbox{\hyperlink{structpessoa_ad5ea2e19b7deb827930edce70e13e3b8}{00020}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{structpessoa_ad5ea2e19b7deb827930edce70e13e3b8}{idade}};}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00021}00021 \};}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00023}\mbox{\hyperlink{_header_8h_ac082d5cee36c7cfeb708ee6b04e8e903}{00023}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structpessoa}{pessoa}} \mbox{\hyperlink{structpessoa}{pessoa}};}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00025}00025 \textcolor{keywordtype}{void} \mbox{\hyperlink{_header_8h_a0f5448f6cd703cab44b41e2b9b572790}{mostraPessoas}}(\mbox{\hyperlink{structpessoa}{pessoa}} p[], \textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00026}00026 \mbox{\hyperlink{structpessoa}{pessoa}} \mbox{\hyperlink{_header_8h_a95715297ae648aad012dc21daa04d917}{existePessoa}}(\mbox{\hyperlink{structpessoa}{pessoa}} p[], \textcolor{keywordtype}{int} size, \textcolor{keywordtype}{char} \mbox{\hyperlink{structpessoa_a0e171e163608cff29f04f3591744bb3e}{nome}}[]);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00028}00028 \textcolor{preprocessor}{\#pragma endregion}}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00030}00030 \textcolor{preprocessor}{\#pragma region AssinaturasArrays}}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00032}00032 \textcolor{keywordtype}{int}* \mbox{\hyperlink{_header_8h_aa5ac60bb921b4c54a9039d846c8a399f}{getArrayPares}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} v[], \textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00033}00033 \textcolor{keywordtype}{int}* \mbox{\hyperlink{_header_8h_ad6bd7cb55b5a2bca3c93279cae2e8d16}{getArrayParesII}}(\textcolor{keywordtype}{int}* v, \textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00034}00034 \textcolor{keywordtype}{void} \mbox{\hyperlink{_header_8h_a93879f75c7a113e23a33561fa0ae0df5}{iniciaArray}}(\textcolor{keywordtype}{int} v[], \textcolor{keyword}{const} \textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00035}00035 \textcolor{keywordtype}{void} \mbox{\hyperlink{_header_8h_acba33774b86ce13b162494309aa91f0c}{mostraArray}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} v[], \textcolor{keyword}{const} \textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00037}00037 \textcolor{keywordtype}{char}* \mbox{\hyperlink{_header_8h_ac46b192e720576aaeec8864ed0ad507b}{allChar}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} v1[], \textcolor{keywordtype}{char} ch);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00038}00038 \textcolor{keywordtype}{boolean} \mbox{\hyperlink{_header_8h_a8396d60bd2607c3f3e7b774ea21a8bc1}{existeChar}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} v1[], \textcolor{keywordtype}{char} ch);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00040}00040 \textcolor{keywordtype}{void} \mbox{\hyperlink{_header_8h_a4a4b7eadce47aaaf72dd2b9f94eae19a}{inicializaArray}}(\textcolor{keywordtype}{char} n[], \textcolor{keywordtype}{int} size, \textcolor{keywordtype}{char} ch);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00041}\mbox{\hyperlink{_header_8h_a4bab2f2b1478e6d87cd3f4b5cb1d3d1b}{00041}} \textcolor{keywordtype}{boolean} \mbox{\hyperlink{_header_8h_a4bab2f2b1478e6d87cd3f4b5cb1d3d1b}{existeValor}}(\textcolor{keywordtype}{int} v[], \textcolor{keywordtype}{int} size, \textcolor{keywordtype}{int} valor);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00042}00042 \textcolor{keywordtype}{int} \mbox{\hyperlink{_header_8h_a95a0363c9608b85f0a4c2c5088d5aab5}{ondeEstaChar}}(\textcolor{keywordtype}{char} v[], \textcolor{keywordtype}{int} size, \textcolor{keywordtype}{char} ch);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00043}00043 \textcolor{keywordtype}{int} \mbox{\hyperlink{_header_8h_a6cd9ca8e3028cc2b956e6419a31c2774}{somaArray}}(\textcolor{keywordtype}{int} valores[], \textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_header_8h_source_l00045}00045 \textcolor{preprocessor}{\#pragma endregion}}
+
+\end{DoxyCode}

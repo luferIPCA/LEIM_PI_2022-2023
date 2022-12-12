@@ -1,0 +1,140 @@
+\hypertarget{_strings_8c}{}\doxysection{D\+:/\+Temp/\+PI/\+Aulas\+PI/\+Aula 6 -\/Arrays/\+Strings.c File Reference}
+\label{_strings_8c}\index{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Strings.c@{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Strings.c}}
+
+
+Funções que manipulam strings.  
+
+
+{\ttfamily \#include \char`\"{}Header.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_strings_8c_a4a4b7eadce47aaaf72dd2b9f94eae19a}{inicializa\+Array}} (char n\mbox{[}$\,$\mbox{]}, int size, char ch)
+\item 
+int \mbox{\hyperlink{_strings_8c_a95a0363c9608b85f0a4c2c5088d5aab5}{onde\+Esta\+Char}} (char v\mbox{[}$\,$\mbox{]}, int size, char ch)
+\item 
+\mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{_strings_8c_a8396d60bd2607c3f3e7b774ea21a8bc1}{existe\+Char}} (const char v1\mbox{[}$\,$\mbox{]}, char ch)
+\item 
+\mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{_strings_8c_ae188f75305c70d2fbfe26d11d6d56deb}{existe\+CharI}} (char v\mbox{[}$\,$\mbox{]}, int size, char ch)
+\item 
+char $\ast$ \mbox{\hyperlink{_strings_8c_ac46b192e720576aaeec8864ed0ad507b}{all\+Char}} (const char v1\mbox{[}$\,$\mbox{]}, char ch)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funções que manipulam strings. 
+
+\begin{DoxyAuthor}{Author}
+lufer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_strings_8c_ac46b192e720576aaeec8864ed0ad507b}\label{_strings_8c_ac46b192e720576aaeec8864ed0ad507b}} 
+\index{Strings.c@{Strings.c}!allChar@{allChar}}
+\index{allChar@{allChar}!Strings.c@{Strings.c}}
+\doxysubsubsection{\texorpdfstring{allChar()}{allChar()}}
+{\footnotesize\ttfamily char $\ast$ all\+Char (\begin{DoxyParamCaption}\item[{const char}]{v1\mbox{[}$\,$\mbox{]},  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+Devolve todos os caracteres existentes num array de caracteres.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & \\
+\hline
+{\em ch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_strings_8c_source_l00076}{76}} of file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+
+\mbox{\Hypertarget{_strings_8c_a8396d60bd2607c3f3e7b774ea21a8bc1}\label{_strings_8c_a8396d60bd2607c3f3e7b774ea21a8bc1}} 
+\index{Strings.c@{Strings.c}!existeChar@{existeChar}}
+\index{existeChar@{existeChar}!Strings.c@{Strings.c}}
+\doxysubsubsection{\texorpdfstring{existeChar()}{existeChar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} existe\+Char (\begin{DoxyParamCaption}\item[{const char}]{v1\mbox{[}$\,$\mbox{]},  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_strings_8c_source_l00043}{43}} of file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+
+\mbox{\Hypertarget{_strings_8c_ae188f75305c70d2fbfe26d11d6d56deb}\label{_strings_8c_ae188f75305c70d2fbfe26d11d6d56deb}} 
+\index{Strings.c@{Strings.c}!existeCharI@{existeCharI}}
+\index{existeCharI@{existeCharI}!Strings.c@{Strings.c}}
+\doxysubsubsection{\texorpdfstring{existeCharI()}{existeCharI()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} existe\+CharI (\begin{DoxyParamCaption}\item[{char}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+Verifica se determinado caracter existe num array de caracteres.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+{\em ch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_strings_8c_source_l00060}{60}} of file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+
+\mbox{\Hypertarget{_strings_8c_a4a4b7eadce47aaaf72dd2b9f94eae19a}\label{_strings_8c_a4a4b7eadce47aaaf72dd2b9f94eae19a}} 
+\index{Strings.c@{Strings.c}!inicializaArray@{inicializaArray}}
+\index{inicializaArray@{inicializaArray}!Strings.c@{Strings.c}}
+\doxysubsubsection{\texorpdfstring{inicializaArray()}{inicializaArray()}}
+{\footnotesize\ttfamily void inicializa\+Array (\begin{DoxyParamCaption}\item[{char}]{n\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+Inicializa um array com determinado caracter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \\
+\hline
+{\em size} & \\
+\hline
+{\em ch} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_strings_8c_source_l00019}{19}} of file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+
+\mbox{\Hypertarget{_strings_8c_a95a0363c9608b85f0a4c2c5088d5aab5}\label{_strings_8c_a95a0363c9608b85f0a4c2c5088d5aab5}} 
+\index{Strings.c@{Strings.c}!ondeEstaChar@{ondeEstaChar}}
+\index{ondeEstaChar@{ondeEstaChar}!Strings.c@{Strings.c}}
+\doxysubsubsection{\texorpdfstring{ondeEstaChar()}{ondeEstaChar()}}
+{\footnotesize\ttfamily int onde\+Esta\+Char (\begin{DoxyParamCaption}\item[{char}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+Indica a posição onde se encontra determinado caracter num array de caracteres.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+{\em ch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_strings_8c_source_l00034}{34}} of file \mbox{\hyperlink{_strings_8c_source}{Strings.\+c}}.
+

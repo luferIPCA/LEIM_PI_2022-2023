@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structpessoa" kind="struct" language="C++" prot="public">
+    <compoundname>pessoa</compoundname>
+    <includes refid="_header_8h" local="no">Header.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpessoa_1a0e171e163608cff29f04f3591744bb3e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char nome[MAXNOME]</definition>
+        <argsstring>[MAXNOME]</argsstring>
+        <name>nome</name>
+        <qualifiedname>pessoa::nome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Temp/PI/AulasPI/Aula 6 -Arrays/Header.h" line="19" column="10" bodyfile="D:/Temp/PI/AulasPI/Aula 6 -Arrays/Header.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int idade</definition>
+        <argsstring></argsstring>
+        <name>idade</name>
+        <qualifiedname>pessoa::idade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Temp/PI/AulasPI/Aula 6 -Arrays/Header.h" line="20" column="9" bodyfile="D:/Temp/PI/AulasPI/Aula 6 -Arrays/Header.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Temp/PI/AulasPI/Aula 6 -Arrays/Header.h" line="18" column="1" bodyfile="D:/Temp/PI/AulasPI/Aula 6 -Arrays/Header.h" bodystart="18" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8" prot="public" virt="non-virtual"><scope>pessoa</scope><name>idade</name></member>
+      <member refid="structpessoa_1a0e171e163608cff29f04f3591744bb3e" prot="public" virt="non-virtual"><scope>pessoa</scope><name>nome</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

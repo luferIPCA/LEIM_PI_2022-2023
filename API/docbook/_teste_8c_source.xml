@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__teste_8c_source" xml:lang="en-US">
+<title>Teste.c</title>
+<indexterm><primary>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Teste.c</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__teste_8c_source_1l00001"/>00001 <emphasis role="comment">/*****************************************************************/</emphasis>
+<anchor xml:id="__teste_8c_source_1l00019"/><link linkend="__teste_8c_1ab13a09707ee56fcac70ddea0d213cc65">00019</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__teste_8c_1ab13a09707ee56fcac70ddea0d213cc65">Soma</link>(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y)&#32;{
+<anchor xml:id="__teste_8c_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;x&#32;+&#32;y;
+<anchor xml:id="__teste_8c_source_1l00021"/>00021 
+<anchor xml:id="__teste_8c_source_1l00022"/>00022 }
+</programlisting></section>

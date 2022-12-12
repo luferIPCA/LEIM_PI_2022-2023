@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__funcoes_8c_source" xml:lang="en-US">
+<title>Funcoes.c</title>
+<indexterm><primary>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Funcoes.c</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__funcoes_8c_source_1l00001"/>00001 <emphasis role="comment">/*****************************************************************/</emphasis>
+<anchor xml:id="__funcoes_8c_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__header_8h">Header.h</link>&quot;</emphasis>
+<anchor xml:id="__funcoes_8c_source_1l00009"/>00009 <emphasis role="preprocessor">#include&#32;&lt;stdio.h&gt;</emphasis>
+<anchor xml:id="__funcoes_8c_source_1l00010"/>00010 
+<anchor xml:id="__funcoes_8c_source_1l00019"/><link linkend="__funcoes_8c_1a0790f12101d5df373fac814cac5a5cbb">00019</link> <emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="__funcoes_8c_1a0790f12101d5df373fac814cac5a5cbb">existeValorArray</link>(<emphasis role="keywordtype">int</emphasis>&#32;v[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">int</emphasis>&#32;valor)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00020"/>00020 
+<anchor xml:id="__funcoes_8c_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;enc&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__funcoes_8c_source_1l00022"/>00022 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(v[i]&#32;==&#32;valor)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;enc&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__funcoes_8c_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__funcoes_8c_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00027"/>00027 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00028"/>00028 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>(enc);
+<anchor xml:id="__funcoes_8c_source_1l00029"/>00029 }
+<anchor xml:id="__funcoes_8c_source_1l00030"/>00030 
+<anchor xml:id="__funcoes_8c_source_1l00039"/><link linkend="__funcoes_8c_1ac83d119714c960c23f0158d25dca6c5f">00039</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__funcoes_8c_1ac83d119714c960c23f0158d25dca6c5f">devolvePosicaoArray</link>(<emphasis role="keywordtype">int</emphasis>&#32;v[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">int</emphasis>&#32;valor)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00040"/>00040 
+<anchor xml:id="__funcoes_8c_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(v[i]&#32;==&#32;valor)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;i;
+<anchor xml:id="__funcoes_8c_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00045"/>00045 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>(-1);
+<anchor xml:id="__funcoes_8c_source_1l00047"/>00047 }
+<anchor xml:id="__funcoes_8c_source_1l00048"/>00048 
+<anchor xml:id="__funcoes_8c_source_1l00056"/><link linkend="__funcoes_8c_1aa5ac60bb921b4c54a9039d846c8a399f">00056</link> <emphasis role="keywordtype">int</emphasis>*&#32;<link linkend="__funcoes_8c_1aa5ac60bb921b4c54a9039d846c8a399f">getArrayPares</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;v[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00057"/>00057 &#32;&#32;&#32;&#32;<emphasis role="comment">//int&#32;aux[size];&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;//Não&#32;é&#32;permitido!</emphasis>
+<anchor xml:id="__funcoes_8c_source_1l00058"/>00058 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;
+<anchor xml:id="__funcoes_8c_source_1l00059"/>00059 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>*&#32;pares&#32;=&#32;(<emphasis role="keywordtype">int</emphasis>*)malloc(<emphasis role="keyword">sizeof</emphasis>(<emphasis role="keywordtype">int</emphasis>)&#32;*&#32;size);
+<anchor xml:id="__funcoes_8c_source_1l00060"/>00060 &#32;&#32;&#32;&#32;<link linkend="__funcoes_8c_1a93879f75c7a113e23a33561fa0ae0df5">iniciaArray</link>(pares,&#32;size);
+<anchor xml:id="__funcoes_8c_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(v[i]&#32;%&#32;2&#32;==&#32;0)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pares[j]&#32;=&#32;v[i];
+<anchor xml:id="__funcoes_8c_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;j++;
+<anchor xml:id="__funcoes_8c_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00066"/>00066 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00067"/>00067 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;pares;
+<anchor xml:id="__funcoes_8c_source_1l00068"/>00068 }
+<anchor xml:id="__funcoes_8c_source_1l00069"/>00069 
+<anchor xml:id="__funcoes_8c_source_1l00070"/><link linkend="__funcoes_8c_1ad6bd7cb55b5a2bca3c93279cae2e8d16">00070</link> <emphasis role="keywordtype">int</emphasis>*&#32;<link linkend="__funcoes_8c_1ad6bd7cb55b5a2bca3c93279cae2e8d16">getArrayParesII</link>(<emphasis role="keywordtype">int</emphasis>&#32;*v,&#32;<emphasis role="keywordtype">int</emphasis>&#32;size)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00071"/>00071 &#32;&#32;&#32;&#32;<emphasis role="comment">//int&#32;aux[size];&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;//Não&#32;é&#32;permitido!</emphasis>
+<anchor xml:id="__funcoes_8c_source_1l00072"/>00072 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;
+<anchor xml:id="__funcoes_8c_source_1l00073"/>00073 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>*&#32;pares&#32;=&#32;(<emphasis role="keywordtype">int</emphasis>*)malloc(<emphasis role="keyword">sizeof</emphasis>(<emphasis role="keywordtype">int</emphasis>)&#32;*&#32;size);
+<anchor xml:id="__funcoes_8c_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<link linkend="__funcoes_8c_1a93879f75c7a113e23a33561fa0ae0df5">iniciaArray</link>(pares,&#32;size);
+<anchor xml:id="__funcoes_8c_source_1l00075"/>00075 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(v[i]&#32;%&#32;2&#32;==&#32;0)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pares[j]&#32;=&#32;v[i];
+<anchor xml:id="__funcoes_8c_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;j++;
+<anchor xml:id="__funcoes_8c_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00080"/>00080 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00081"/>00081 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;pares;
+<anchor xml:id="__funcoes_8c_source_1l00082"/>00082 }
+<anchor xml:id="__funcoes_8c_source_1l00083"/>00083 
+<anchor xml:id="__funcoes_8c_source_1l00090"/><link linkend="__funcoes_8c_1acba33774b86ce13b162494309aa91f0c">00090</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__funcoes_8c_1acba33774b86ce13b162494309aa91f0c">mostraArray</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;v[],&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;size)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00091"/>00091 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(v[i]&#32;!=&#32;NULL)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;v=%d\n&quot;</emphasis>,&#32;v[i]);
+<anchor xml:id="__funcoes_8c_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00095"/>00095 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00096"/>00096 }
+<anchor xml:id="__funcoes_8c_source_1l00097"/>00097 
+<anchor xml:id="__funcoes_8c_source_1l00104"/><link linkend="__funcoes_8c_1a93879f75c7a113e23a33561fa0ae0df5">00104</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__funcoes_8c_1a93879f75c7a113e23a33561fa0ae0df5">iniciaArray</link>(<emphasis role="keywordtype">int</emphasis>&#32;v[],&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;size)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00105"/>00105 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;v[i]&#32;=&#32;0;
+<anchor xml:id="__funcoes_8c_source_1l00107"/>00107 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00108"/>00108 }
+<anchor xml:id="__funcoes_8c_source_1l00109"/>00109 
+<anchor xml:id="__funcoes_8c_source_1l00110"/>00110 
+<anchor xml:id="__funcoes_8c_source_1l00111"/>00111 <emphasis role="preprocessor">#pragma&#32;region&#32;STRUCTS</emphasis>
+<anchor xml:id="__funcoes_8c_source_1l00118"/><link linkend="__funcoes_8c_1a0f5448f6cd703cab44b41e2b9b572790">00118</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__funcoes_8c_1a0f5448f6cd703cab44b41e2b9b572790">mostraPessoas</link>(<link linkend="_structpessoa">pessoa</link>&#32;p[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00119"/>00119 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00120"/>00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Idade:&#32;%d\n&quot;</emphasis>,&#32;p[i].idade);
+<anchor xml:id="__funcoes_8c_source_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Nome:&#32;%s\n&quot;</emphasis>,&#32;p[i].nome);
+<anchor xml:id="__funcoes_8c_source_1l00122"/>00122 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00123"/>00123 }
+<anchor xml:id="__funcoes_8c_source_1l00124"/>00124 
+<anchor xml:id="__funcoes_8c_source_1l00133"/><link linkend="__funcoes_8c_1a95715297ae648aad012dc21daa04d917">00133</link> <link linkend="_structpessoa">pessoa</link>&#32;<link linkend="__funcoes_8c_1a95715297ae648aad012dc21daa04d917">existePessoa</link>(<link linkend="_structpessoa">pessoa</link>&#32;p[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">char</emphasis>&#32;nome[])&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00134"/>00134 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//if(p[i].nome==nome)</emphasis>
+<anchor xml:id="__funcoes_8c_source_1l00136"/>00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(strcmp(p[i].nome,&#32;nome)&#32;==&#32;0)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00137"/>00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;p[i];
+<anchor xml:id="__funcoes_8c_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00139"/>00139 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00140"/>00140 &#32;&#32;&#32;&#32;<link linkend="_structpessoa">pessoa</link>&#32;aux&#32;=&#32;{&#32;-1,<emphasis role="stringliteral">&quot;&quot;</emphasis>&#32;};
+<anchor xml:id="__funcoes_8c_source_1l00141"/>00141 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;aux;
+<anchor xml:id="__funcoes_8c_source_1l00142"/>00142 }
+<anchor xml:id="__funcoes_8c_source_1l00143"/>00143 
+<anchor xml:id="__funcoes_8c_source_1l00144"/>00144 <emphasis role="preprocessor">#pragma&#32;endregion</emphasis>
+<anchor xml:id="__funcoes_8c_source_1l00145"/>00145 
+<anchor xml:id="__funcoes_8c_source_1l00146"/><link linkend="__funcoes_8c_1a6cd9ca8e3028cc2b956e6419a31c2774">00146</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__funcoes_8c_1a6cd9ca8e3028cc2b956e6419a31c2774">somaArray</link>(<emphasis role="keywordtype">int</emphasis>&#32;valores[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00147"/>00147 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;soma&#32;=&#32;0;
+<anchor xml:id="__funcoes_8c_source_1l00148"/>00148 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__funcoes_8c_source_1l00149"/>00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(valores[i]&#32;==&#32;0)&#32;<emphasis role="keywordflow">continue</emphasis>;
+<anchor xml:id="__funcoes_8c_source_1l00150"/>00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soma&#32;+=&#32;valores[i];
+<anchor xml:id="__funcoes_8c_source_1l00151"/>00151 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__funcoes_8c_source_1l00152"/>00152 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;soma;
+<anchor xml:id="__funcoes_8c_source_1l00153"/>00153 }
+<anchor xml:id="__funcoes_8c_source_1l00154"/>00154 
+</programlisting></section>

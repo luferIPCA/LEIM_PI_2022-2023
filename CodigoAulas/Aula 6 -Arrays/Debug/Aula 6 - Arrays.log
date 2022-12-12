@@ -1,0 +1,11 @@
+﻿  Aula.c
+D:\Temp\PI\Aula 6 -Arrays\Aula.c(38,19): warning C4101: 'turma': unreferenced local variable
+  Funcoes.c
+D:\Temp\PI\Aula 6 -Arrays\Funcoes.c(68,30): warning C4013: 'malloc' undefined; assuming extern returning int
+D:\Temp\PI\Aula 6 -Arrays\Funcoes.c(112,25): warning C4047: '!=': 'const int' differs in levels of indirection from 'void *'
+D:\Temp\PI\Aula 6 -Arrays\Funcoes.c(193,19): warning C4013: 'strcmp' undefined; assuming extern returning int
+  Strings.c
+D:\Temp\PI\Aula 6 -Arrays\Strings.c(95,30): warning C4013: 'malloc' undefined; assuming extern returning int
+  Generating Code...
+D:\Temp\PI\Aula 6 -Arrays\Strings.c(64): warning C4715: 'existeChar': not all control paths return a value
+  Aula 6 - Arrays.vcxproj -> D:\Temp\PI\Debug\Aula 6 - Arrays.exe

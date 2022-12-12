@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__header_8h_source" xml:lang="en-US">
+<title>Header.h</title>
+<indexterm><primary>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Header.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__header_8h_source_1l00001"/>00001 <emphasis role="comment">/*****************************************************************/</emphasis>
+<anchor xml:id="__header_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__header_8h_source_1l00009"/>00009 
+<anchor xml:id="__header_8h_source_1l00010"/><link linkend="__header_8h_1ac8d0b8208abd9d034f8773dce910b3f5">00010</link> <emphasis role="preprocessor">#define&#32;MAXNOME&#32;50</emphasis>
+<anchor xml:id="__header_8h_source_1l00011"/><link linkend="__header_8h_1a392fb874e547e582e9c66a08a1f23326">00011</link> <emphasis role="preprocessor">#define&#32;MAX&#32;5</emphasis>
+<anchor xml:id="__header_8h_source_1l00012"/>00012 <emphasis role="preprocessor">#pragma&#32;warning&#32;(disable:&#32;4996)</emphasis>
+<anchor xml:id="__header_8h_source_1l00013"/>00013 
+<anchor xml:id="__header_8h_source_1l00014"/>00014 
+<anchor xml:id="__header_8h_source_1l00015"/>00015 <emphasis role="preprocessor">#pragma&#32;region&#32;AssinaturasStructs</emphasis>
+<anchor xml:id="__header_8h_source_1l00016"/><link linkend="__header_8h_1a7c6368b321bd9acd0149b030bb8275ed">00016</link> <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">enum</emphasis>&#32;{<emphasis role="keyword">false</emphasis>,&#32;<emphasis role="keyword">true</emphasis>}<link linkend="__header_8h_1a7c6368b321bd9acd0149b030bb8275ed">boolean</link>;
+<anchor xml:id="__header_8h_source_1l00017"/>00017 
+<anchor xml:id="__header_8h_source_1l00018"/><link linkend="_structpessoa">00018</link> <emphasis role="keyword">struct&#32;</emphasis><link linkend="_structpessoa">pessoa</link>&#32;{
+<anchor xml:id="__header_8h_source_1l00019"/><link linkend="_structpessoa_1a0e171e163608cff29f04f3591744bb3e">00019</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_structpessoa_1a0e171e163608cff29f04f3591744bb3e">nome</link>[<link linkend="__header_8h_1ac8d0b8208abd9d034f8773dce910b3f5">MAXNOME</link>];
+<anchor xml:id="__header_8h_source_1l00020"/><link linkend="_structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8">00020</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8">idade</link>;
+<anchor xml:id="__header_8h_source_1l00021"/>00021 };
+<anchor xml:id="__header_8h_source_1l00022"/>00022 
+<anchor xml:id="__header_8h_source_1l00023"/><link linkend="__header_8h_1ac082d5cee36c7cfeb708ee6b04e8e903">00023</link> <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_structpessoa">pessoa</link>&#32;<link linkend="_structpessoa">pessoa</link>;
+<anchor xml:id="__header_8h_source_1l00024"/>00024 
+<anchor xml:id="__header_8h_source_1l00025"/>00025 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__header_8h_1a0f5448f6cd703cab44b41e2b9b572790">mostraPessoas</link>(<link linkend="_structpessoa">pessoa</link>&#32;p[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size);
+<anchor xml:id="__header_8h_source_1l00026"/>00026 <link linkend="_structpessoa">pessoa</link>&#32;<link linkend="__header_8h_1a95715297ae648aad012dc21daa04d917">existePessoa</link>(<link linkend="_structpessoa">pessoa</link>&#32;p[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_structpessoa_1a0e171e163608cff29f04f3591744bb3e">nome</link>[]);
+<anchor xml:id="__header_8h_source_1l00027"/>00027 
+<anchor xml:id="__header_8h_source_1l00028"/>00028 <emphasis role="preprocessor">#pragma&#32;endregion</emphasis>
+<anchor xml:id="__header_8h_source_1l00029"/>00029 
+<anchor xml:id="__header_8h_source_1l00030"/>00030 <emphasis role="preprocessor">#pragma&#32;region&#32;AssinaturasArrays</emphasis>
+<anchor xml:id="__header_8h_source_1l00031"/>00031 
+<anchor xml:id="__header_8h_source_1l00032"/>00032 <emphasis role="keywordtype">int</emphasis>*&#32;<link linkend="__header_8h_1aa5ac60bb921b4c54a9039d846c8a399f">getArrayPares</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;v[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size);
+<anchor xml:id="__header_8h_source_1l00033"/>00033 <emphasis role="keywordtype">int</emphasis>*&#32;<link linkend="__header_8h_1ad6bd7cb55b5a2bca3c93279cae2e8d16">getArrayParesII</link>(<emphasis role="keywordtype">int</emphasis>*&#32;v,&#32;<emphasis role="keywordtype">int</emphasis>&#32;size);
+<anchor xml:id="__header_8h_source_1l00034"/>00034 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__header_8h_1a93879f75c7a113e23a33561fa0ae0df5">iniciaArray</link>(<emphasis role="keywordtype">int</emphasis>&#32;v[],&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;size);
+<anchor xml:id="__header_8h_source_1l00035"/>00035 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__header_8h_1acba33774b86ce13b162494309aa91f0c">mostraArray</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;v[],&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;size);
+<anchor xml:id="__header_8h_source_1l00036"/>00036 
+<anchor xml:id="__header_8h_source_1l00037"/>00037 <emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="__header_8h_1ac46b192e720576aaeec8864ed0ad507b">allChar</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;v1[],&#32;<emphasis role="keywordtype">char</emphasis>&#32;ch);
+<anchor xml:id="__header_8h_source_1l00038"/>00038 <emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="__header_8h_1a8396d60bd2607c3f3e7b774ea21a8bc1">existeChar</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;v1[],&#32;<emphasis role="keywordtype">char</emphasis>&#32;ch);
+<anchor xml:id="__header_8h_source_1l00039"/>00039 
+<anchor xml:id="__header_8h_source_1l00040"/>00040 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__header_8h_1a4a4b7eadce47aaaf72dd2b9f94eae19a">inicializaArray</link>(<emphasis role="keywordtype">char</emphasis>&#32;n[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">char</emphasis>&#32;ch);
+<anchor xml:id="__header_8h_source_1l00041"/><link linkend="__header_8h_1a4bab2f2b1478e6d87cd3f4b5cb1d3d1b">00041</link> <emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="__header_8h_1a4bab2f2b1478e6d87cd3f4b5cb1d3d1b">existeValor</link>(<emphasis role="keywordtype">int</emphasis>&#32;v[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">int</emphasis>&#32;valor);
+<anchor xml:id="__header_8h_source_1l00042"/>00042 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__header_8h_1a95a0363c9608b85f0a4c2c5088d5aab5">ondeEstaChar</link>(<emphasis role="keywordtype">char</emphasis>&#32;v[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">char</emphasis>&#32;ch);
+<anchor xml:id="__header_8h_source_1l00043"/>00043 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__header_8h_1a6cd9ca8e3028cc2b956e6419a31c2774">somaArray</link>(<emphasis role="keywordtype">int</emphasis>&#32;valores[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size);
+<anchor xml:id="__header_8h_source_1l00044"/>00044 
+<anchor xml:id="__header_8h_source_1l00045"/>00045 <emphasis role="preprocessor">#pragma&#32;endregion</emphasis>
+</programlisting></section>

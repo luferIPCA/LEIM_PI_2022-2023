@@ -1,0 +1,5 @@
+﻿  Aula.c
+  Funcoes.c
+D:\Temp\PI\Aula 7\Funcoes.c(12,9): warning C4013: 'printf' undefined; assuming extern returning int
+  Generating Code...
+  Aula 7.vcxproj -> D:\Temp\PI\Debug\Aula 7.exe

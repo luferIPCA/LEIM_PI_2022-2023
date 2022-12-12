@@ -1,0 +1,59 @@
+\hypertarget{_strings_8c_source}{}\doxysection{Strings.\+c}
+\label{_strings_8c_source}\index{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Strings.c@{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Strings.c}}
+\mbox{\hyperlink{_strings_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00001}00001 \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_header_8h}{Header.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00010}00010 \textcolor{preprocessor}{\#pragma region ARRAY\_CHARS}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00019}\mbox{\hyperlink{_header_8h_a4a4b7eadce47aaaf72dd2b9f94eae19a}{00019}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_strings_8c_a4a4b7eadce47aaaf72dd2b9f94eae19a}{inicializaArray}}(\textcolor{keywordtype}{char} n[], \textcolor{keywordtype}{int} size, \textcolor{keywordtype}{char} ch) \{}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00020}00020     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; i++) \{}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00021}00021         n[i] = ch;              \textcolor{comment}{//atenção que ainda não testei...}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00022}00022     \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00034}\mbox{\hyperlink{_header_8h_a95a0363c9608b85f0a4c2c5088d5aab5}{00034}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_strings_8c_a95a0363c9608b85f0a4c2c5088d5aab5}{ondeEstaChar}}(\textcolor{keywordtype}{char} v[], \textcolor{keywordtype}{int} size, \textcolor{keywordtype}{char} ch) \{}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00035}00035     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00036}00036     \textcolor{keywordflow}{while} (i < size) \{}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00037}00037         \textcolor{keywordflow}{if} (v[i] == ch) \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00038}00038         i++;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00039}00039     \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00040}00040     \textcolor{keywordflow}{return} -\/1;          \textcolor{comment}{//se não existir devolve -\/1}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00041}00041 \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00043}\mbox{\hyperlink{_header_8h_a8396d60bd2607c3f3e7b774ea21a8bc1}{00043}} \textcolor{keywordtype}{boolean} \mbox{\hyperlink{_strings_8c_a8396d60bd2607c3f3e7b774ea21a8bc1}{existeChar}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} v1[], \textcolor{keywordtype}{char} ch) \{}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00044}00044     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00045}00045     \textcolor{comment}{//int size = sizeof(v1);}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00046}00046     \textcolor{keywordflow}{while}(v1[i] !=\textcolor{charliteral}{'\(\backslash\)0'})\{ \textcolor{comment}{// or < size)\{}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00047}00047         \textcolor{keywordflow}{if} (v1[i] == ch) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00048}00048         i++;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00049}00049     \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00050}00050 \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00060}\mbox{\hyperlink{_strings_8c_ae188f75305c70d2fbfe26d11d6d56deb}{00060}} \textcolor{keywordtype}{boolean} \mbox{\hyperlink{_strings_8c_ae188f75305c70d2fbfe26d11d6d56deb}{existeCharI}}(\textcolor{keywordtype}{char} v[], \textcolor{keywordtype}{int} size, \textcolor{keywordtype}{char} ch) \{}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00061}00061     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00062}00062     \textcolor{keywordflow}{while} (i < size) \{}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00063}00063         \textcolor{keywordflow}{if} (v[i] == ch) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00064}00064         i++;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00065}00065     \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00066}00066     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00067}00067 \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00076}\mbox{\hyperlink{_header_8h_ac46b192e720576aaeec8864ed0ad507b}{00076}} \textcolor{keywordtype}{char}* \mbox{\hyperlink{_strings_8c_ac46b192e720576aaeec8864ed0ad507b}{allChar}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} v1[], \textcolor{keywordtype}{char} ch) \{}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00077}00077     \textcolor{keywordtype}{char}* aux = (\textcolor{keywordtype}{char}*)malloc(\textcolor{keyword}{sizeof}(v1)+1);    \textcolor{comment}{//cria um array}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00078}00078     \textcolor{keywordtype}{int} i = 0,j=0;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00079}00079     \textcolor{keywordflow}{while} (v1[i] != \textcolor{charliteral}{'\(\backslash\)0'}) \{ }
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00080}00080         \textcolor{keywordflow}{if} (v1[i] == ch) \{}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00081}00081             aux[j++] = v1[i];}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00082}00082         \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00083}00083         i++;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00084}00084     \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00085}00085     aux[j] = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00086}00086     \textcolor{keywordflow}{return} aux;}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00087}00087 \}}
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_strings_8c_source_l00089}00089 \textcolor{preprocessor}{\#pragma endregion}}
+
+\end{DoxyCode}

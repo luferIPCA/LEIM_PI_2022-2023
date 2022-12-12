@@ -1,0 +1,4 @@
+﻿  ReadCSV.c
+D:\Temp\PI\CodigoAulas\Aula 8 - Ficheiros - CSV\ReadCSV.c(57,13): warning C4013: 'exit' undefined; assuming extern returning int
+D:\Temp\PI\CodigoAulas\Aula 8 - Ficheiros - CSV\ReadCSV.c(79,30): warning C4013: 'atof' undefined; assuming extern returning int
+  Aula 8 - Ficheiros - CSV.vcxproj -> D:\Temp\PI\CodigoAulas\Aula 8 - Ficheiros - CSV\Debug\Aula 8 - Ficheiros - CSV.exe

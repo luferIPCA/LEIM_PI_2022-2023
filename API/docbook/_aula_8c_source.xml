@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__aula_8c_source" xml:lang="en-US">
+<title>Aula.c</title>
+<indexterm><primary>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Aula.c</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__aula_8c_source_1l00001"/>00001 <emphasis role="comment">/*****************************************************************/</emphasis>
+<anchor xml:id="__aula_8c_source_1l00009"/>00009 <emphasis role="preprocessor">#include&#32;&lt;stdio.h&gt;</emphasis>
+<anchor xml:id="__aula_8c_source_1l00010"/>00010 <emphasis role="preprocessor">#include&#32;&lt;string.h&gt;</emphasis>
+<anchor xml:id="__aula_8c_source_1l00011"/>00011 <emphasis role="preprocessor">#include&#32;&lt;stdlib.h&gt;</emphasis>&#32;<emphasis role="comment">//malloc/free</emphasis>
+<anchor xml:id="__aula_8c_source_1l00012"/>00012 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__header_8h">Header.h</link>&quot;</emphasis>
+<anchor xml:id="__aula_8c_source_1l00013"/>00013 <emphasis role="preprocessor">#include&#32;&lt;locale.h&gt;</emphasis>
+<anchor xml:id="__aula_8c_source_1l00014"/>00014 
+<anchor xml:id="__aula_8c_source_1l00015"/><link linkend="__aula_8c_1a840291bc02cba5474a4cb46a9b9566fe">00015</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__aula_8c_1a840291bc02cba5474a4cb46a9b9566fe">main</link>(<emphasis role="keywordtype">void</emphasis>)&#32;{
+<anchor xml:id="__aula_8c_source_1l00016"/>00016 &#32;&#32;&#32;&#32;setlocale(LC_ALL,&#32;<emphasis role="stringliteral">&quot;en_US.utf8&quot;</emphasis>);
+<anchor xml:id="__aula_8c_source_1l00017"/>00017 
+<anchor xml:id="__aula_8c_source_1l00018"/>00018 <emphasis role="preprocessor">#pragma&#32;region&#32;Strings</emphasis>
+<anchor xml:id="__aula_8c_source_1l00019"/>00019 
+<anchor xml:id="__aula_8c_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;str[]&#32;=&#32;<emphasis role="stringliteral">&quot;Benfica&quot;</emphasis>;
+<anchor xml:id="__aula_8c_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<emphasis role="comment">//char&#32;str[]&#32;=&#32;{&#32;&apos;B&apos;,&apos;e&apos;,&apos;n&apos;,&apos;f&apos;,&apos;i&apos;,&apos;c&apos;,&apos;a&apos;,&apos;\0&apos;&#32;};</emphasis>
+<anchor xml:id="__aula_8c_source_1l00022"/>00022 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;str2[20];
+<anchor xml:id="__aula_8c_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>*&#32;str3;
+<anchor xml:id="__aula_8c_source_1l00024"/>00024 
+<anchor xml:id="__aula_8c_source_1l00025"/>00025 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;%d\n&quot;</emphasis>,&#32;<emphasis role="keyword">sizeof</emphasis>(str));
+<anchor xml:id="__aula_8c_source_1l00026"/>00026 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;b&#32;=&#32;<link linkend="__header_8h_1a8396d60bd2607c3f3e7b774ea21a8bc1">existeChar</link>(str,&#32;<emphasis role="charliteral">&apos;B&apos;</emphasis>);
+<anchor xml:id="__aula_8c_source_1l00027"/>00027 &#32;&#32;&#32;&#32;strcpy(str2,&#32;str);&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//strcpy:&#32;copia&#32;uma&#32;string&#32;para&#32;outra</emphasis>
+<anchor xml:id="__aula_8c_source_1l00028"/>00028 &#32;&#32;&#32;&#32;str3&#32;=&#32;<link linkend="__header_8h_1ac46b192e720576aaeec8864ed0ad507b">allChar</link>(str,&#32;<emphasis role="charliteral">&apos;B&apos;</emphasis>);
+<anchor xml:id="__aula_8c_source_1l00029"/>00029 
+<anchor xml:id="__aula_8c_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;str1[12]&#32;=&#32;<emphasis role="stringliteral">&quot;&#32;Hello&quot;</emphasis>;
+<anchor xml:id="__aula_8c_source_1l00031"/>00031 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;&#32;len;
+<anchor xml:id="__aula_8c_source_1l00032"/>00032 
+<anchor xml:id="__aula_8c_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;copy&#32;str1&#32;into&#32;str3&#32;*/</emphasis>
+<anchor xml:id="__aula_8c_source_1l00034"/>00034 &#32;&#32;&#32;&#32;strcpy(str3,&#32;str1);
+<anchor xml:id="__aula_8c_source_1l00035"/>00035 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;strcpy(&#32;str3,&#32;str1)&#32;:&#32;&#32;%s\n&quot;</emphasis>,&#32;str3);
+<anchor xml:id="__aula_8c_source_1l00036"/>00036 
+<anchor xml:id="__aula_8c_source_1l00037"/>00037 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;concatenates&#32;str1&#32;and&#32;str2&#32;*/</emphasis>
+<anchor xml:id="__aula_8c_source_1l00038"/>00038 &#32;&#32;&#32;&#32;strcat(str2,&#32;str1);
+<anchor xml:id="__aula_8c_source_1l00039"/>00039 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;strcat(&#32;str1,&#32;str2):&#32;&#32;&#32;%s\n&quot;</emphasis>,&#32;str2);
+<anchor xml:id="__aula_8c_source_1l00040"/>00040 
+<anchor xml:id="__aula_8c_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;total&#32;lenghth&#32;of&#32;str1&#32;after&#32;concatenation&#32;*/</emphasis>
+<anchor xml:id="__aula_8c_source_1l00042"/>00042 &#32;&#32;&#32;&#32;len&#32;=&#32;strlen(str1);
+<anchor xml:id="__aula_8c_source_1l00043"/>00043 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;strlen(str1)&#32;:&#32;&#32;%d\n&quot;</emphasis>,&#32;len);
+<anchor xml:id="__aula_8c_source_1l00044"/>00044 
+<anchor xml:id="__aula_8c_source_1l00045"/>00045 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;nome[<link linkend="__header_8h_1a392fb874e547e582e9c66a08a1f23326">MAX</link>];
+<anchor xml:id="__aula_8c_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<link linkend="__header_8h_1a4a4b7eadce47aaaf72dd2b9f94eae19a">inicializaArray</link>(nome,&#32;<link linkend="__header_8h_1a392fb874e547e582e9c66a08a1f23326">MAX</link>,&#32;<emphasis role="charliteral">&apos;B&apos;</emphasis>);
+<anchor xml:id="__aula_8c_source_1l00047"/>00047 &#32;&#32;&#32;&#32;<emphasis role="comment">//char&#32;morada[]&#32;=&#32;&quot;Viana&quot;;</emphasis>
+<anchor xml:id="__aula_8c_source_1l00048"/>00048 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;morada[]&#32;=&#32;{&#32;<emphasis role="charliteral">&apos;V&apos;</emphasis>,<emphasis role="charliteral">&apos;i&apos;</emphasis>,<emphasis role="charliteral">&apos;a&apos;</emphasis>,<emphasis role="charliteral">&apos;n&apos;</emphasis>,<emphasis role="charliteral">&apos;a&apos;</emphasis>,<emphasis role="charliteral">&apos;\0&apos;</emphasis>&#32;};
+<anchor xml:id="__aula_8c_source_1l00049"/>00049 
+<anchor xml:id="__aula_8c_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;pos&#32;=&#32;<link linkend="__header_8h_1a95a0363c9608b85f0a4c2c5088d5aab5">ondeEstaChar</link>(morada,&#32;6,&#32;<emphasis role="charliteral">&apos;i&apos;</emphasis>);
+<anchor xml:id="__aula_8c_source_1l00051"/>00051 
+<anchor xml:id="__aula_8c_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(pos&#32;&lt;&#32;0)
+<anchor xml:id="__aula_8c_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;puts(<emphasis role="stringliteral">&quot;ERRO&quot;</emphasis>);
+<anchor xml:id="__aula_8c_source_1l00054"/>00054 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__aula_8c_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Está&#32;na&#32;posição:&#32;%d\n&quot;</emphasis>,&#32;pos);
+<anchor xml:id="__aula_8c_source_1l00056"/>00056 &#32;&#32;&#32;&#32;<emphasis role="comment">//free(str3);</emphasis>
+<anchor xml:id="__aula_8c_source_1l00057"/>00057 
+<anchor xml:id="__aula_8c_source_1l00058"/>00058 <emphasis role="preprocessor">#pragma&#32;endregion&#32;</emphasis>
+<anchor xml:id="__aula_8c_source_1l00059"/>00059 
+<anchor xml:id="__aula_8c_source_1l00060"/>00060 <emphasis role="preprocessor">#pragma&#32;region&#32;ArrayII</emphasis>
+<anchor xml:id="__aula_8c_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<emphasis role="comment">//Criar&#32;array&#32;como&#32;conjunto&#32;de&#32;apontadores&#32;para</emphasis>
+<anchor xml:id="__aula_8c_source_1l00062"/>00062 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>*&#32;valores&#32;=&#32;(<emphasis role="keywordtype">int</emphasis>*)malloc(<emphasis role="keyword">sizeof</emphasis>(<emphasis role="keywordtype">int</emphasis>)&#32;*&#32;10);
+<anchor xml:id="__aula_8c_source_1l00063"/>00063 &#32;&#32;&#32;&#32;<link linkend="__funcoes_8c_1a93879f75c7a113e23a33561fa0ae0df5">iniciaArray</link>(valores,&#32;<link linkend="__header_8h_1a392fb874e547e582e9c66a08a1f23326">MAX</link>);
+<anchor xml:id="__aula_8c_source_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="comment">//iniciaArray(valores,&#32;10);</emphasis>
+<anchor xml:id="__aula_8c_source_1l00065"/>00065 &#32;&#32;&#32;&#32;valores[0]&#32;=&#32;-2;
+<anchor xml:id="__aula_8c_source_1l00066"/>00066 &#32;&#32;&#32;&#32;<emphasis role="comment">//*valores&#32;=&#32;-2;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;//valores[0]</emphasis>
+<anchor xml:id="__aula_8c_source_1l00067"/>00067 &#32;&#32;&#32;&#32;valores[1]&#32;=&#32;20;
+<anchor xml:id="__aula_8c_source_1l00068"/>00068 &#32;&#32;&#32;&#32;<emphasis role="comment">//*(valores&#32;+&#32;1)&#32;=&#32;12;&#32;&#32;&#32;//valores[1]</emphasis>
+<anchor xml:id="__aula_8c_source_1l00069"/>00069 &#32;&#32;&#32;&#32;valores[2]&#32;=&#32;13;
+<anchor xml:id="__aula_8c_source_1l00070"/>00070 &#32;&#32;&#32;&#32;valores[3]&#32;=&#32;10;
+<anchor xml:id="__aula_8c_source_1l00071"/>00071 &#32;&#32;&#32;&#32;valores[9]&#32;=&#32;137;
+<anchor xml:id="__aula_8c_source_1l00072"/>00072 
+<anchor xml:id="__aula_8c_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;n&#32;=&#32;10;
+<anchor xml:id="__aula_8c_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<link linkend="__funcoes_8c_1acba33774b86ce13b162494309aa91f0c">mostraArray</link>(valores,&#32;10);
+<anchor xml:id="__aula_8c_source_1l00075"/>00075 
+<anchor xml:id="__aula_8c_source_1l00076"/>00076 &#32;&#32;&#32;<emphasis role="comment">/*&#32;valores&#32;=&#32;getArrayPares(valores,&#32;10);</emphasis>
+<anchor xml:id="__aula_8c_source_1l00077"/>00077 <emphasis role="comment">&#32;&#32;&#32;&#32;valores&#32;=&#32;getArrayParesII(valores,&#32;10);*/</emphasis>
+<anchor xml:id="__aula_8c_source_1l00078"/>00078 
+<anchor xml:id="__aula_8c_source_1l00079"/>00079 &#32;&#32;&#32;&#32;<link linkend="__funcoes_8c_1acba33774b86ce13b162494309aa91f0c">mostraArray</link>(valores,&#32;10);
+<anchor xml:id="__aula_8c_source_1l00080"/>00080 
+<anchor xml:id="__aula_8c_source_1l00081"/>00081 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;soma&#32;=&#32;<link linkend="__funcoes_8c_1a6cd9ca8e3028cc2b956e6419a31c2774">somaArray</link>(valores,&#32;<link linkend="__header_8h_1a392fb874e547e582e9c66a08a1f23326">MAX</link>);
+<anchor xml:id="__aula_8c_source_1l00082"/>00082 
+<anchor xml:id="__aula_8c_source_1l00083"/>00083 &#32;&#32;&#32;&#32;free(valores);
+<anchor xml:id="__aula_8c_source_1l00084"/>00084 <emphasis role="preprocessor">#pragma&#32;endregion</emphasis>
+<anchor xml:id="__aula_8c_source_1l00085"/>00085 
+<anchor xml:id="__aula_8c_source_1l00086"/>00086 <emphasis role="preprocessor">#pragma&#32;region&#32;STRUCTS</emphasis>
+<anchor xml:id="__aula_8c_source_1l00087"/>00087 
+<anchor xml:id="__aula_8c_source_1l00088"/>00088 &#32;&#32;&#32;&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_structpessoa">pessoa</link>&#32;p;
+<anchor xml:id="__aula_8c_source_1l00089"/>00089 &#32;&#32;&#32;&#32;p.<link linkend="_structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8">idade</link>&#32;=&#32;20;
+<anchor xml:id="__aula_8c_source_1l00090"/>00090 &#32;&#32;&#32;&#32;strcpy(p.<link linkend="_structpessoa_1a0e171e163608cff29f04f3591744bb3e">nome</link>,&#32;<emphasis role="stringliteral">&quot;luis&quot;</emphasis>);
+<anchor xml:id="__aula_8c_source_1l00091"/>00091 &#32;&#32;&#32;&#32;<emphasis role="comment">//scanf(&quot;%s&quot;,&#32;p.nome);</emphasis>
+<anchor xml:id="__aula_8c_source_1l00092"/>00092 
+<anchor xml:id="__aula_8c_source_1l00093"/>00093 &#32;&#32;&#32;&#32;<link linkend="_structpessoa">pessoa</link>&#32;p1&#32;=&#32;{&#32;12,&#32;<emphasis role="stringliteral">&quot;ola&quot;</emphasis>&#32;};
+<anchor xml:id="__aula_8c_source_1l00094"/>00094 
+<anchor xml:id="__aula_8c_source_1l00095"/>00095 &#32;&#32;&#32;&#32;<link linkend="_structpessoa">pessoa</link>&#32;alunos[<link linkend="__header_8h_1a392fb874e547e582e9c66a08a1f23326">MAX</link>];
+<anchor xml:id="__aula_8c_source_1l00096"/>00096 &#32;&#32;&#32;&#32;alunos[0]&#32;=&#32;p;
+<anchor xml:id="__aula_8c_source_1l00097"/>00097 &#32;&#32;&#32;&#32;alunos[2]&#32;=&#32;p1;
+<anchor xml:id="__aula_8c_source_1l00098"/>00098 
+<anchor xml:id="__aula_8c_source_1l00099"/>00099 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Idade:&#32;%d\n&quot;</emphasis>,&#32;alunos[0].<link linkend="_structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8">idade</link>);
+<anchor xml:id="__aula_8c_source_1l00100"/>00100 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Nome:&#32;%s\n&quot;</emphasis>,&#32;alunos[0].<link linkend="_structpessoa_1a0e171e163608cff29f04f3591744bb3e">nome</link>);
+<anchor xml:id="__aula_8c_source_1l00101"/>00101 
+<anchor xml:id="__aula_8c_source_1l00102"/>00102 &#32;&#32;&#32;&#32;<link linkend="__funcoes_8c_1a0f5448f6cd703cab44b41e2b9b572790">mostraPessoas</link>(alunos,&#32;<link linkend="__header_8h_1a392fb874e547e582e9c66a08a1f23326">MAX</link>);
+<anchor xml:id="__aula_8c_source_1l00103"/>00103 &#32;&#32;&#32;&#32;<link linkend="_structpessoa">pessoa</link>&#32;aux1&#32;=&#32;<link linkend="__funcoes_8c_1a95715297ae648aad012dc21daa04d917">existePessoa</link>(alunos,&#32;<link linkend="__header_8h_1a392fb874e547e582e9c66a08a1f23326">MAX</link>,&#32;<emphasis role="stringliteral">&quot;luis&quot;</emphasis>);
+<anchor xml:id="__aula_8c_source_1l00104"/>00104 
+<anchor xml:id="__aula_8c_source_1l00105"/>00105 <emphasis role="preprocessor">#pragma&#32;endregion</emphasis>
+<anchor xml:id="__aula_8c_source_1l00106"/>00106 }
+</programlisting></section>

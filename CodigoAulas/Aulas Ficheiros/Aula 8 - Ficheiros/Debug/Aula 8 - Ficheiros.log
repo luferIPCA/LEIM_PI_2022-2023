@@ -1,0 +1,10 @@
+﻿  Ficheiros.c
+D:\Temp\PI\Aulas Ficheiros\Aula 8 - Ficheiros\Ficheiros.c(51,9): warning C4013: 'getche' undefined; assuming extern returning int
+  FicheirosTextoC-Exercicio01_a.c
+  FicheirosTextoC-Exercicio02_a.c
+D:\Temp\PI\Aulas Ficheiros\Aula 8 - Ficheiros\FicheirosTextoC-Exercicio02_a.c(57,16): warning C4013: 'getche' undefined; assuming extern returning int
+  FicheirosTextoC-Exercicio03.c
+D:\Temp\PI\Aulas Ficheiros\Aula 8 - Ficheiros\FicheirosTextoC-Exercicio03.c(57,8): warning C4013: 'getche' undefined; assuming extern returning int
+D:\Temp\PI\Aulas Ficheiros\Aula 8 - Ficheiros\FicheirosTextoC-Exercicio03.c(36,22): warning C4101: 'media': unreferenced local variable
+  Generating Code...
+  Aula 8 - Ficheiros.vcxproj -> D:\Temp\PI\Debug\Aula 8 - Ficheiros Texto.exe

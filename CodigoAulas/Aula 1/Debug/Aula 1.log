@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Aula 1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Aula1.c
+D:\Temp\PI\Aula 1\Aula1.c(21,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+  Soma.c
+  Generating Code...
+  Aula 1.vcxproj -> D:\Temp\PI\Debug\Aula 1 - Basico.exe

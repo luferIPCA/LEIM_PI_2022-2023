@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_ee8e2aea4c9f425e138eef2f22b30925" kind="dir">
+    <compoundname>D:/Temp/PI/AulasPI/Aula 6 -Arrays</compoundname>
+    <innerfile refid="_aula_8c">Aula.c</innerfile>
+    <innerfile refid="_funcoes_8c">Funcoes.c</innerfile>
+    <innerfile refid="_header_8h">Header.h</innerfile>
+    <innerfile refid="_novo_8c">Novo.c</innerfile>
+    <innerfile refid="_source_8c">Source.c</innerfile>
+    <innerfile refid="_strings_8c">Strings.c</innerfile>
+    <innerfile refid="_teste_8c">Teste.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Temp/PI/AulasPI/Aula 6 -Arrays/"/>
+  </compounddef>
+</doxygen>

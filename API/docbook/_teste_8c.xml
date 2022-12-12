@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__teste_8c" xml:lang="en-US">
+<title>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Teste.c File Reference</title>
+<indexterm><primary>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Teste.c</primary></indexterm>
+<para>
+
+<para>
+<literallayout>&#160;&#xa;</literallayout>
+ </para>
+ 
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="__teste_8c_1ab13a09707ee56fcac70ddea0d213cc65">Soma</link> (int x, int y)</para>
+
+<para>Calcula a soma de dois valores inteiros. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>
+<literallayout>&#160;&#xa;</literallayout>
+ </para>
+
+<para><formalpara><title>Author</title>
+
+<para>lufer </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>October 2022 </para>
+</formalpara>
+</para>
+<para>
+Definition in file <link linkend="__teste_8c_source">Teste.c</link>.</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__teste_8c_1ab13a09707ee56fcac70ddea0d213cc65"/><section>
+    <title>Soma()</title>
+<indexterm><primary>Soma</primary><secondary>Teste.c</secondary></indexterm>
+<indexterm><primary>Teste.c</primary><secondary>Soma</secondary></indexterm>
+<para><computeroutput>int Soma (int x, int y)</computeroutput></para><para>
+
+<para>Calcula a soma de dois valores inteiros. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>Valor de entrada </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>Valore de entrada </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Soma dos dois dalores </para>
+</formalpara>
+<formalpara><title>Author</title>
+
+<para>lufer </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__teste_8c_source_1l00019">19</link> of file <link linkend="__teste_8c_source">Teste.c</link>.</para>
+</section>
+</section>
+</section>

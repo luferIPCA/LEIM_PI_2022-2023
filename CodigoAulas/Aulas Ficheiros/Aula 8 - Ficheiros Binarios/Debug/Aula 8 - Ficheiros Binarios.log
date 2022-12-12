@@ -1,0 +1,8 @@
+﻿  exemplo-ficheiro-bin-escrita.c
+D:\Temp\PI\Aulas Ficheiros\Aula 8 - Ficheiros Binarios\exemplo-ficheiro-bin-escrita.c(36,11): warning C4098: 'main1': 'void' function returning a value
+  exemplo-ficheiro-bin-leitura.c
+D:\Temp\PI\Aulas Ficheiros\Aula 8 - Ficheiros Binarios\exemplo-ficheiro-bin-leitura.c(34,2): warning C4098: 'main': 'void' function returning a value
+  exemplo-ficheiro-bin-posicao.c
+  exemplo-ficheiro-bin-tamanho.c
+  Generating Code...
+  Aula 8 - Ficheiros Binarios.vcxproj -> D:\Temp\PI\Debug\Aula 8 - Ficheiros Binarios.exe

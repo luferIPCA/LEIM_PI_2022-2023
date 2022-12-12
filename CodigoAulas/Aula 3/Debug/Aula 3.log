@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Aula 3.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Funcoesc.c
+  Printf.c
+  Revisao.c
+  Scanf.c
+D:\Temp\PI\Aula 3\Scanf.c(43,6): warning C4013: 'gets' undefined; assuming extern returning int
+  Generating Code...
+D:\Temp\PI\Aula 3\Revisao.c(31): warning C4716: 'main2': must return a value
+  Aula 3.vcxproj -> D:\Temp\PI\Debug\Aula 3 - Input-Output.exe

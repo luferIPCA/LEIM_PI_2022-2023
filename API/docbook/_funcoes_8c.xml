@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__funcoes_8c" xml:lang="en-US">
+<title>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Funcoes.c File Reference</title>
+<indexterm><primary>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Funcoes.c</primary></indexterm>
+<para>
+
+<para>Funções para manipular arrays Manipular strings como array de char. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;Header.h&quot;
+#include &lt;stdio.h&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="__header_8h_1a7c6368b321bd9acd0149b030bb8275ed">boolean</link> <link linkend="__funcoes_8c_1a0790f12101d5df373fac814cac5a5cbb">existeValorArray</link> (int v[], int size, int valor)</para>
+</listitem>
+            <listitem><para>int <link linkend="__funcoes_8c_1ac83d119714c960c23f0158d25dca6c5f">devolvePosicaoArray</link> (int v[], int size, int valor)</para>
+</listitem>
+            <listitem><para>int * <link linkend="__funcoes_8c_1aa5ac60bb921b4c54a9039d846c8a399f">getArrayPares</link> (const int v[], int size)</para>
+</listitem>
+            <listitem><para>int * <link linkend="__funcoes_8c_1ad6bd7cb55b5a2bca3c93279cae2e8d16">getArrayParesII</link> (int *v, int size)</para>
+</listitem>
+            <listitem><para>void <link linkend="__funcoes_8c_1acba33774b86ce13b162494309aa91f0c">mostraArray</link> (const int v[], const int size)</para>
+</listitem>
+            <listitem><para>void <link linkend="__funcoes_8c_1a93879f75c7a113e23a33561fa0ae0df5">iniciaArray</link> (int v[], const int size)</para>
+</listitem>
+            <listitem><para>void <link linkend="__funcoes_8c_1a0f5448f6cd703cab44b41e2b9b572790">mostraPessoas</link> (<link linkend="_structpessoa">pessoa</link> p[], int size)</para>
+</listitem>
+            <listitem><para><link linkend="_structpessoa">pessoa</link> <link linkend="__funcoes_8c_1a95715297ae648aad012dc21daa04d917">existePessoa</link> (<link linkend="_structpessoa">pessoa</link> p[], int size, char nome[])</para>
+</listitem>
+            <listitem><para>int <link linkend="__funcoes_8c_1a6cd9ca8e3028cc2b956e6419a31c2774">somaArray</link> (int valores[], int size)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Funções para manipular arrays Manipular strings como array de char. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>lufer </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2022 </para>
+</formalpara>
+</para>
+<para>
+Definition in file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__funcoes_8c_1ac83d119714c960c23f0158d25dca6c5f"/><section>
+    <title>devolvePosicaoArray()</title>
+<indexterm><primary>devolvePosicaoArray</primary><secondary>Funcoes.c</secondary></indexterm>
+<indexterm><primary>Funcoes.c</primary><secondary>devolvePosicaoArray</secondary></indexterm>
+<para><computeroutput>int devolvePosicaoArray (int v[], int size, int valor)</computeroutput></para>
+<para>Devolve a posição onde determinado valor ocorre num array</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>v</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>size</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>valor</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__funcoes_8c_source_1l00039">39</link> of file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+<anchor xml:id="__funcoes_8c_1a95715297ae648aad012dc21daa04d917"/><section>
+    <title>existePessoa()</title>
+<indexterm><primary>existePessoa</primary><secondary>Funcoes.c</secondary></indexterm>
+<indexterm><primary>Funcoes.c</primary><secondary>existePessoa</secondary></indexterm>
+<para><computeroutput><link linkend="_structpessoa">pessoa</link> existePessoa (<link linkend="_structpessoa">pessoa</link> p[], int size, char nome[])</computeroutput></para>
+<para>Procura a pessoa com determinado nome!</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>size</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>nome</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__funcoes_8c_source_1l00133">133</link> of file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+<anchor xml:id="__funcoes_8c_1a0790f12101d5df373fac814cac5a5cbb"/><section>
+    <title>existeValorArray()</title>
+<indexterm><primary>existeValorArray</primary><secondary>Funcoes.c</secondary></indexterm>
+<indexterm><primary>Funcoes.c</primary><secondary>existeValorArray</secondary></indexterm>
+<para><computeroutput><link linkend="__header_8h_1a7c6368b321bd9acd0149b030bb8275ed">boolean</link> existeValorArray (int v[], int size, int valor)</computeroutput></para>
+<para>Verifica se determinado valor existe num array</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>v</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>size</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>valor</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__funcoes_8c_source_1l00019">19</link> of file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+<anchor xml:id="__funcoes_8c_1aa5ac60bb921b4c54a9039d846c8a399f"/><section>
+    <title>getArrayPares()</title>
+<indexterm><primary>getArrayPares</primary><secondary>Funcoes.c</secondary></indexterm>
+<indexterm><primary>Funcoes.c</primary><secondary>getArrayPares</secondary></indexterm>
+<para><computeroutput>int * getArrayPares (const int v[], int size)</computeroutput></para>
+<para>Devolve arrays de valores pares!</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>v</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>size</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__funcoes_8c_source_1l00056">56</link> of file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+<anchor xml:id="__funcoes_8c_1ad6bd7cb55b5a2bca3c93279cae2e8d16"/><section>
+    <title>getArrayParesII()</title>
+<indexterm><primary>getArrayParesII</primary><secondary>Funcoes.c</secondary></indexterm>
+<indexterm><primary>Funcoes.c</primary><secondary>getArrayParesII</secondary></indexterm>
+<para><computeroutput>int * getArrayParesII (int * v, int size)</computeroutput></para><para>
+Definition at line <link linkend="__funcoes_8c_source_1l00070">70</link> of file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+<anchor xml:id="__funcoes_8c_1a93879f75c7a113e23a33561fa0ae0df5"/><section>
+    <title>iniciaArray()</title>
+<indexterm><primary>iniciaArray</primary><secondary>Funcoes.c</secondary></indexterm>
+<indexterm><primary>Funcoes.c</primary><secondary>iniciaArray</secondary></indexterm>
+<para><computeroutput>void iniciaArray (int v[], const int size)</computeroutput></para>
+<para>Coloca valor inicial em todas as posições de um array.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>v</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>size</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__funcoes_8c_source_1l00104">104</link> of file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+<anchor xml:id="__funcoes_8c_1acba33774b86ce13b162494309aa91f0c"/><section>
+    <title>mostraArray()</title>
+<indexterm><primary>mostraArray</primary><secondary>Funcoes.c</secondary></indexterm>
+<indexterm><primary>Funcoes.c</primary><secondary>mostraArray</secondary></indexterm>
+<para><computeroutput>void mostraArray (const int v[], const int size)</computeroutput></para>
+<para>Apresenta conteúdo do array no ecrã</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>v</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>size</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__funcoes_8c_source_1l00090">90</link> of file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+<anchor xml:id="__funcoes_8c_1a0f5448f6cd703cab44b41e2b9b572790"/><section>
+    <title>mostraPessoas()</title>
+<indexterm><primary>mostraPessoas</primary><secondary>Funcoes.c</secondary></indexterm>
+<indexterm><primary>Funcoes.c</primary><secondary>mostraPessoas</secondary></indexterm>
+<para><computeroutput>void mostraPessoas (<link linkend="_structpessoa">pessoa</link> p[], int size)</computeroutput></para>
+<para>Apresenta todas as pessoas que constam um array!</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>size</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__funcoes_8c_source_1l00118">118</link> of file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+<anchor xml:id="__funcoes_8c_1a6cd9ca8e3028cc2b956e6419a31c2774"/><section>
+    <title>somaArray()</title>
+<indexterm><primary>somaArray</primary><secondary>Funcoes.c</secondary></indexterm>
+<indexterm><primary>Funcoes.c</primary><secondary>somaArray</secondary></indexterm>
+<para><computeroutput>int somaArray (int valores[], int size)</computeroutput></para><para>
+Definition at line <link linkend="__funcoes_8c_source_1l00146">146</link> of file <link linkend="__funcoes_8c_source">Funcoes.c</link>.</para>
+</section>
+</section>
+</section>

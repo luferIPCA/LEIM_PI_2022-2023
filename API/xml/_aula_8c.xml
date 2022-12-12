@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="_aula_8c" kind="file" language="C++">
+    <compoundname>Aula.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="_header_8h" local="yes">Header.h</includes>
+    <includes local="no">locale.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Aula.c</label>
+        <link refid="_aula_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Header.h</label>
+        <link refid="_header_8h"/>
+      </node>
+      <node id="6">
+        <label>locale.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_aula_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Temp/PI/AulasPI/Aula 6 -Arrays/Aula.c" line="15" column="5" bodyfile="D:/Temp/PI/AulasPI/Aula 6 -Arrays/Aula.c" bodystart="15" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manipulação de Arrays Simples e Strings Strings == array de caracteres terminado com &apos;\0&apos; Tipos de Dados estruturados. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>lufer </para>
+</simplesect>
+<simplesect kind="date"><para>2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*****************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//malloc/free</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_header_8h" kindref="compound">Header.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;locale.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_aula_8c_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_aula_8c_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>setlocale(LC_ALL,<sp/></highlight><highlight class="stringliteral">&quot;en_US.utf8&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Strings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>str[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Benfica&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//char<sp/>str[]<sp/>=<sp/>{<sp/>&apos;B&apos;,&apos;e&apos;,&apos;n&apos;,&apos;f&apos;,&apos;i&apos;,&apos;c&apos;,&apos;a&apos;,&apos;\0&apos;<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>str2[20];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str3;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%d\n&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(str));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>b<sp/>=<sp/><ref refid="_header_8h_1a8396d60bd2607c3f3e7b774ea21a8bc1" kindref="member">existeChar</ref>(str,<sp/></highlight><highlight class="charliteral">&apos;B&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(str2,<sp/>str);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//strcpy:<sp/>copia<sp/>uma<sp/>string<sp/>para<sp/>outra</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>str3<sp/>=<sp/><ref refid="_header_8h_1ac46b192e720576aaeec8864ed0ad507b" kindref="member">allChar</ref>(str,<sp/></highlight><highlight class="charliteral">&apos;B&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>str1[12]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Hello&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>len;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>copy<sp/>str1<sp/>into<sp/>str3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(str3,<sp/>str1);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;strcpy(<sp/>str3,<sp/>str1)<sp/>:<sp/><sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>str3);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>concatenates<sp/>str1<sp/>and<sp/>str2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>strcat(str2,<sp/>str1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;strcat(<sp/>str1,<sp/>str2):<sp/><sp/><sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>str2);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>total<sp/>lenghth<sp/>of<sp/>str1<sp/>after<sp/>concatenation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>len<sp/>=<sp/>strlen(str1);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;strlen(str1)<sp/>:<sp/><sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>len);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nome[<ref refid="_header_8h_1a392fb874e547e582e9c66a08a1f23326" kindref="member">MAX</ref>];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_header_8h_1a4a4b7eadce47aaaf72dd2b9f94eae19a" kindref="member">inicializaArray</ref>(nome,<sp/><ref refid="_header_8h_1a392fb874e547e582e9c66a08a1f23326" kindref="member">MAX</ref>,<sp/></highlight><highlight class="charliteral">&apos;B&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//char<sp/>morada[]<sp/>=<sp/>&quot;Viana&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>morada[]<sp/>=<sp/>{<sp/></highlight><highlight class="charliteral">&apos;V&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/><ref refid="_header_8h_1a95a0363c9608b85f0a4c2c5088d5aab5" kindref="member">ondeEstaChar</ref>(morada,<sp/>6,<sp/></highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;ERRO&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Está<sp/>na<sp/>posição:<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>pos);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//free(str3);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>ArrayII</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Criar<sp/>array<sp/>como<sp/>conjunto<sp/>de<sp/>apontadores<sp/>para</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>valores<sp/>=<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>*<sp/>10);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_funcoes_8c_1a93879f75c7a113e23a33561fa0ae0df5" kindref="member">iniciaArray</ref>(valores,<sp/><ref refid="_header_8h_1a392fb874e547e582e9c66a08a1f23326" kindref="member">MAX</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//iniciaArray(valores,<sp/>10);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>valores[0]<sp/>=<sp/>-2;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*valores<sp/>=<sp/>-2;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//valores[0]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>valores[1]<sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*(valores<sp/>+<sp/>1)<sp/>=<sp/>12;<sp/><sp/><sp/>//valores[1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>valores[2]<sp/>=<sp/>13;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>valores[3]<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>valores[9]<sp/>=<sp/>137;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_funcoes_8c_1acba33774b86ce13b162494309aa91f0c" kindref="member">mostraArray</ref>(valores,<sp/>10);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>valores<sp/>=<sp/>getArrayPares(valores,<sp/>10);</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>valores<sp/>=<sp/>getArrayParesII(valores,<sp/>10);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_funcoes_8c_1acba33774b86ce13b162494309aa91f0c" kindref="member">mostraArray</ref>(valores,<sp/>10);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>soma<sp/>=<sp/><ref refid="_funcoes_8c_1a6cd9ca8e3028cc2b956e6419a31c2774" kindref="member">somaArray</ref>(valores,<sp/><ref refid="_header_8h_1a392fb874e547e582e9c66a08a1f23326" kindref="member">MAX</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>free(valores);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>STRUCTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpessoa" kindref="compound">pessoa</ref><sp/>p;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8" kindref="member">idade</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(p.<ref refid="structpessoa_1a0e171e163608cff29f04f3591744bb3e" kindref="member">nome</ref>,<sp/></highlight><highlight class="stringliteral">&quot;luis&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//scanf(&quot;%s&quot;,<sp/>p.nome);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpessoa" kindref="compound">pessoa</ref><sp/>p1<sp/>=<sp/>{<sp/>12,<sp/></highlight><highlight class="stringliteral">&quot;ola&quot;</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpessoa" kindref="compound">pessoa</ref><sp/>alunos[<ref refid="_header_8h_1a392fb874e547e582e9c66a08a1f23326" kindref="member">MAX</ref>];</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>alunos[0]<sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>alunos[2]<sp/>=<sp/>p1;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Idade:<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>alunos[0].<ref refid="structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8" kindref="member">idade</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Nome:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>alunos[0].<ref refid="structpessoa_1a0e171e163608cff29f04f3591744bb3e" kindref="member">nome</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_funcoes_8c_1a0f5448f6cd703cab44b41e2b9b572790" kindref="member">mostraPessoas</ref>(alunos,<sp/><ref refid="_header_8h_1a392fb874e547e582e9c66a08a1f23326" kindref="member">MAX</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpessoa" kindref="compound">pessoa</ref><sp/>aux1<sp/>=<sp/><ref refid="_funcoes_8c_1a95715297ae648aad012dc21daa04d917" kindref="member">existePessoa</ref>(alunos,<sp/><ref refid="_header_8h_1a392fb874e547e582e9c66a08a1f23326" kindref="member">MAX</ref>,<sp/></highlight><highlight class="stringliteral">&quot;luis&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Temp/PI/AulasPI/Aula 6 -Arrays/Aula.c"/>
+  </compounddef>
+</doxygen>

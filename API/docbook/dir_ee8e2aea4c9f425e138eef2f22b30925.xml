@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_ee8e2aea4c9f425e138eef2f22b30925" xml:lang="en-US">
+<title>D:/Temp/PI/AulasPI/Aula 6 -Arrays Directory Reference</title>
+<indexterm><primary>D:/Temp/PI/AulasPI/Aula 6 -Arrays Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__aula_8c">Aula.c</link></para>
+
+<para>Manipulação de Arrays Simples e Strings Strings == array de caracteres terminado com &apos;\0&apos; Tipos de Dados estruturados. </para>
+</listitem>
+            <listitem><para>file <link linkend="__funcoes_8c">Funcoes.c</link></para>
+
+<para>Funções para manipular arrays Manipular strings como array de char. </para>
+</listitem>
+            <listitem><para>file <link linkend="__header_8h">Header.h</link></para>
+
+<para>Assinaturas de funções e Tipos de Dados Structs. </para>
+</listitem>
+            <listitem><para>file <link linkend="__novo_8c">Novo.c</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__source_8c">Source.c</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__strings_8c">Strings.c</link></para>
+
+<para>Funções que manipulam strings. </para>
+</listitem>
+            <listitem><para>file <link linkend="__teste_8c">Teste.c</link></para>
+
+<para>
+<literallayout>&#160;&#xa;</literallayout>
+ </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

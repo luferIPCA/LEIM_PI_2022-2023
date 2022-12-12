@@ -1,0 +1,6 @@
+﻿  inscricao.c
+  main.c
+D:\Temp\PI\Aulas Ficheiros\Aula 8 - Ficheiros II\main.c(14,7): warning C4101: 'texto': unreferenced local variable
+  menu.c
+  Generating Code...
+  Aula 8 - Ficheiros II.vcxproj -> D:\Temp\PI\Debug\Aula 8  - Ficheiros.exe

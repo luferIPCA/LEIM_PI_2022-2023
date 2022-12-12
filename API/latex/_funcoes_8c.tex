@@ -1,0 +1,219 @@
+\hypertarget{_funcoes_8c}{}\doxysection{D\+:/\+Temp/\+PI/\+Aulas\+PI/\+Aula 6 -\/Arrays/\+Funcoes.c File Reference}
+\label{_funcoes_8c}\index{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Funcoes.c@{D:/Temp/PI/AulasPI/Aula 6 -\/Arrays/Funcoes.c}}
+
+
+Funções para manipular arrays Manipular strings como array de char.  
+
+
+{\ttfamily \#include \char`\"{}Header.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{_funcoes_8c_a0790f12101d5df373fac814cac5a5cbb}{existe\+Valor\+Array}} (int v\mbox{[}$\,$\mbox{]}, int size, int valor)
+\item 
+int \mbox{\hyperlink{_funcoes_8c_ac83d119714c960c23f0158d25dca6c5f}{devolve\+Posicao\+Array}} (int v\mbox{[}$\,$\mbox{]}, int size, int valor)
+\item 
+int $\ast$ \mbox{\hyperlink{_funcoes_8c_aa5ac60bb921b4c54a9039d846c8a399f}{get\+Array\+Pares}} (const int v\mbox{[}$\,$\mbox{]}, int size)
+\item 
+int $\ast$ \mbox{\hyperlink{_funcoes_8c_ad6bd7cb55b5a2bca3c93279cae2e8d16}{get\+Array\+Pares\+II}} (int $\ast$v, int size)
+\item 
+void \mbox{\hyperlink{_funcoes_8c_acba33774b86ce13b162494309aa91f0c}{mostra\+Array}} (const int v\mbox{[}$\,$\mbox{]}, const int size)
+\item 
+void \mbox{\hyperlink{_funcoes_8c_a93879f75c7a113e23a33561fa0ae0df5}{inicia\+Array}} (int v\mbox{[}$\,$\mbox{]}, const int size)
+\item 
+void \mbox{\hyperlink{_funcoes_8c_a0f5448f6cd703cab44b41e2b9b572790}{mostra\+Pessoas}} (\mbox{\hyperlink{structpessoa}{pessoa}} p\mbox{[}$\,$\mbox{]}, int size)
+\item 
+\mbox{\hyperlink{structpessoa}{pessoa}} \mbox{\hyperlink{_funcoes_8c_a95715297ae648aad012dc21daa04d917}{existe\+Pessoa}} (\mbox{\hyperlink{structpessoa}{pessoa}} p\mbox{[}$\,$\mbox{]}, int size, char nome\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{_funcoes_8c_a6cd9ca8e3028cc2b956e6419a31c2774}{soma\+Array}} (int valores\mbox{[}$\,$\mbox{]}, int size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funções para manipular arrays Manipular strings como array de char. 
+
+\begin{DoxyAuthor}{Author}
+lufer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_funcoes_8c_ac83d119714c960c23f0158d25dca6c5f}\label{_funcoes_8c_ac83d119714c960c23f0158d25dca6c5f}} 
+\index{Funcoes.c@{Funcoes.c}!devolvePosicaoArray@{devolvePosicaoArray}}
+\index{devolvePosicaoArray@{devolvePosicaoArray}!Funcoes.c@{Funcoes.c}}
+\doxysubsubsection{\texorpdfstring{devolvePosicaoArray()}{devolvePosicaoArray()}}
+{\footnotesize\ttfamily int devolve\+Posicao\+Array (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+Devolve a posição onde determinado valor ocorre num array
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+{\em valor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00039}{39}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_funcoes_8c_a95715297ae648aad012dc21daa04d917}\label{_funcoes_8c_a95715297ae648aad012dc21daa04d917}} 
+\index{Funcoes.c@{Funcoes.c}!existePessoa@{existePessoa}}
+\index{existePessoa@{existePessoa}!Funcoes.c@{Funcoes.c}}
+\doxysubsubsection{\texorpdfstring{existePessoa()}{existePessoa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpessoa}{pessoa}} existe\+Pessoa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpessoa}{pessoa}}}]{p\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{char}]{nome\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Procura a pessoa com determinado nome!
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em size} & \\
+\hline
+{\em nome} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00133}{133}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_funcoes_8c_a0790f12101d5df373fac814cac5a5cbb}\label{_funcoes_8c_a0790f12101d5df373fac814cac5a5cbb}} 
+\index{Funcoes.c@{Funcoes.c}!existeValorArray@{existeValorArray}}
+\index{existeValorArray@{existeValorArray}!Funcoes.c@{Funcoes.c}}
+\doxysubsubsection{\texorpdfstring{existeValorArray()}{existeValorArray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_header_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} existe\+Valor\+Array (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+Verifica se determinado valor existe num array
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+{\em valor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00019}{19}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_funcoes_8c_aa5ac60bb921b4c54a9039d846c8a399f}\label{_funcoes_8c_aa5ac60bb921b4c54a9039d846c8a399f}} 
+\index{Funcoes.c@{Funcoes.c}!getArrayPares@{getArrayPares}}
+\index{getArrayPares@{getArrayPares}!Funcoes.c@{Funcoes.c}}
+\doxysubsubsection{\texorpdfstring{getArrayPares()}{getArrayPares()}}
+{\footnotesize\ttfamily int $\ast$ get\+Array\+Pares (\begin{DoxyParamCaption}\item[{const int}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Devolve arrays de valores pares!
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00056}{56}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_funcoes_8c_ad6bd7cb55b5a2bca3c93279cae2e8d16}\label{_funcoes_8c_ad6bd7cb55b5a2bca3c93279cae2e8d16}} 
+\index{Funcoes.c@{Funcoes.c}!getArrayParesII@{getArrayParesII}}
+\index{getArrayParesII@{getArrayParesII}!Funcoes.c@{Funcoes.c}}
+\doxysubsubsection{\texorpdfstring{getArrayParesII()}{getArrayParesII()}}
+{\footnotesize\ttfamily int $\ast$ get\+Array\+Pares\+II (\begin{DoxyParamCaption}\item[{int $\ast$}]{v,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00070}{70}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_funcoes_8c_a93879f75c7a113e23a33561fa0ae0df5}\label{_funcoes_8c_a93879f75c7a113e23a33561fa0ae0df5}} 
+\index{Funcoes.c@{Funcoes.c}!iniciaArray@{iniciaArray}}
+\index{iniciaArray@{iniciaArray}!Funcoes.c@{Funcoes.c}}
+\doxysubsubsection{\texorpdfstring{iniciaArray()}{iniciaArray()}}
+{\footnotesize\ttfamily void inicia\+Array (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]},  }\item[{const int}]{size }\end{DoxyParamCaption})}
+
+Coloca valor inicial em todas as posições de um array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00104}{104}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_funcoes_8c_acba33774b86ce13b162494309aa91f0c}\label{_funcoes_8c_acba33774b86ce13b162494309aa91f0c}} 
+\index{Funcoes.c@{Funcoes.c}!mostraArray@{mostraArray}}
+\index{mostraArray@{mostraArray}!Funcoes.c@{Funcoes.c}}
+\doxysubsubsection{\texorpdfstring{mostraArray()}{mostraArray()}}
+{\footnotesize\ttfamily void mostra\+Array (\begin{DoxyParamCaption}\item[{const int}]{v\mbox{[}$\,$\mbox{]},  }\item[{const int}]{size }\end{DoxyParamCaption})}
+
+Apresenta conteúdo do array no ecrã
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00090}{90}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_funcoes_8c_a0f5448f6cd703cab44b41e2b9b572790}\label{_funcoes_8c_a0f5448f6cd703cab44b41e2b9b572790}} 
+\index{Funcoes.c@{Funcoes.c}!mostraPessoas@{mostraPessoas}}
+\index{mostraPessoas@{mostraPessoas}!Funcoes.c@{Funcoes.c}}
+\doxysubsubsection{\texorpdfstring{mostraPessoas()}{mostraPessoas()}}
+{\footnotesize\ttfamily void mostra\+Pessoas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpessoa}{pessoa}}}]{p\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Apresenta todas as pessoas que constam um array!
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00118}{118}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+
+\mbox{\Hypertarget{_funcoes_8c_a6cd9ca8e3028cc2b956e6419a31c2774}\label{_funcoes_8c_a6cd9ca8e3028cc2b956e6419a31c2774}} 
+\index{Funcoes.c@{Funcoes.c}!somaArray@{somaArray}}
+\index{somaArray@{somaArray}!Funcoes.c@{Funcoes.c}}
+\doxysubsubsection{\texorpdfstring{somaArray()}{somaArray()}}
+{\footnotesize\ttfamily int soma\+Array (\begin{DoxyParamCaption}\item[{int}]{valores\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_funcoes_8c_source_l00146}{146}} of file \mbox{\hyperlink{_funcoes_8c_source}{Funcoes.\+c}}.
+

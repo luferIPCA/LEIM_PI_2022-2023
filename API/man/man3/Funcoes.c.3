@@ -1,0 +1,190 @@
+.TH "D:/Temp/PI/AulasPI/Aula 6 -Arrays/Funcoes.c" 3 "Fri Oct 28 2022" "Version 1.0" "Aulas de PI - EIM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/Temp/PI/AulasPI/Aula 6 -Arrays/Funcoes.c \- Funções para manipular arrays Manipular strings como array de char\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Header\&.h'\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBboolean\fP \fBexisteValorArray\fP (int v[], int size, int valor)"
+.br
+.ti -1c
+.RI "int \fBdevolvePosicaoArray\fP (int v[], int size, int valor)"
+.br
+.ti -1c
+.RI "int * \fBgetArrayPares\fP (const int v[], int size)"
+.br
+.ti -1c
+.RI "int * \fBgetArrayParesII\fP (int *v, int size)"
+.br
+.ti -1c
+.RI "void \fBmostraArray\fP (const int v[], const int size)"
+.br
+.ti -1c
+.RI "void \fBiniciaArray\fP (int v[], const int size)"
+.br
+.ti -1c
+.RI "void \fBmostraPessoas\fP (\fBpessoa\fP p[], int size)"
+.br
+.ti -1c
+.RI "\fBpessoa\fP \fBexistePessoa\fP (\fBpessoa\fP p[], int size, char nome[])"
+.br
+.ti -1c
+.RI "int \fBsomaArray\fP (int valores[], int size)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Funções para manipular arrays Manipular strings como array de char\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+lufer 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2022 
+.RE
+.PP
+
+.PP
+Definition in file \fBFuncoes\&.c\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "int devolvePosicaoArray (int v[], int size, int valor)"
+Devolve a posição onde determinado valor ocorre num array
+.PP
+\fBParameters\fP
+.RS 4
+\fIv\fP 
+.br
+\fIsize\fP 
+.br
+\fIvalor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB39\fP of file \fBFuncoes\&.c\fP\&.
+.SS "\fBpessoa\fP existePessoa (\fBpessoa\fP p[], int size, char nome[])"
+Procura a pessoa com determinado nome!
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP 
+.br
+\fIsize\fP 
+.br
+\fInome\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB133\fP of file \fBFuncoes\&.c\fP\&.
+.SS "\fBboolean\fP existeValorArray (int v[], int size, int valor)"
+Verifica se determinado valor existe num array
+.PP
+\fBParameters\fP
+.RS 4
+\fIv\fP 
+.br
+\fIsize\fP 
+.br
+\fIvalor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB19\fP of file \fBFuncoes\&.c\fP\&.
+.SS "int * getArrayPares (const int v[], int size)"
+Devolve arrays de valores pares!
+.PP
+\fBParameters\fP
+.RS 4
+\fIv\fP 
+.br
+\fIsize\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB56\fP of file \fBFuncoes\&.c\fP\&.
+.SS "int * getArrayParesII (int * v, int size)"
+
+.PP
+Definition at line \fB70\fP of file \fBFuncoes\&.c\fP\&.
+.SS "void iniciaArray (int v[], const int size)"
+Coloca valor inicial em todas as posições de um array\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIv\fP 
+.br
+\fIsize\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB104\fP of file \fBFuncoes\&.c\fP\&.
+.SS "void mostraArray (const int v[], const int size)"
+Apresenta conteúdo do array no ecrã
+.PP
+\fBParameters\fP
+.RS 4
+\fIv\fP 
+.br
+\fIsize\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB90\fP of file \fBFuncoes\&.c\fP\&.
+.SS "void mostraPessoas (\fBpessoa\fP p[], int size)"
+Apresenta todas as pessoas que constam um array!
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP 
+.br
+\fIsize\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB118\fP of file \fBFuncoes\&.c\fP\&.
+.SS "int somaArray (int valores[], int size)"
+
+.PP
+Definition at line \fB146\fP of file \fBFuncoes\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Aulas de PI - EIM from the source code\&.

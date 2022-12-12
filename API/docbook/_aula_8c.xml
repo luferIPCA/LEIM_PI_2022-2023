@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__aula_8c" xml:lang="en-US">
+<title>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Aula.c File Reference</title>
+<indexterm><primary>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Aula.c</primary></indexterm>
+<para>
+
+<para>Manipulação de Arrays Simples e Strings Strings == array de caracteres terminado com &apos;\0&apos; Tipos de Dados estruturados. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdlib.h&gt;
+#include &quot;Header.h&quot;
+#include &lt;locale.h&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="__aula_8c_1a840291bc02cba5474a4cb46a9b9566fe">main</link> (void)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Manipulação de Arrays Simples e Strings Strings == array de caracteres terminado com &apos;\0&apos; Tipos de Dados estruturados. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>lufer </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2022 </para>
+</formalpara>
+</para>
+<para>
+Definition in file <link linkend="__aula_8c_source">Aula.c</link>.</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__aula_8c_1a840291bc02cba5474a4cb46a9b9566fe"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>Aula.c</secondary></indexterm>
+<indexterm><primary>Aula.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (void )</computeroutput></para><para>
+Definition at line <link linkend="__aula_8c_source_1l00015">15</link> of file <link linkend="__aula_8c_source">Aula.c</link>.</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structpessoa" xml:lang="en-US">
+<title>pessoa Struct Reference</title>
+<indexterm><primary>pessoa</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Header.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_structpessoa_1a0e171e163608cff29f04f3591744bb3e">nome</link> [<link linkend="__header_8h_1ac8d0b8208abd9d034f8773dce910b3f5">MAXNOME</link>]</para>
+</listitem>
+            <listitem><para>int <link linkend="_structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8">idade</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__header_8h_source_1l00018">18</link> of file <link linkend="__header_8h_source">Header.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_structpessoa_1ad5ea2e19b7deb827930edce70e13e3b8"/><section>
+    <title>idade</title>
+<indexterm><primary>idade</primary><secondary>pessoa</secondary></indexterm>
+<indexterm><primary>pessoa</primary><secondary>idade</secondary></indexterm>
+<para><computeroutput>int idade</computeroutput></para><para>
+Definition at line <link linkend="__header_8h_source_1l00020">20</link> of file <link linkend="__header_8h_source">Header.h</link>.</para>
+</section>
+<anchor xml:id="_structpessoa_1a0e171e163608cff29f04f3591744bb3e"/><section>
+    <title>nome</title>
+<indexterm><primary>nome</primary><secondary>pessoa</secondary></indexterm>
+<indexterm><primary>pessoa</primary><secondary>nome</secondary></indexterm>
+<para><computeroutput>char nome[<link linkend="__header_8h_1ac8d0b8208abd9d034f8773dce910b3f5">MAXNOME</link>]</computeroutput></para><para>
+Definition at line <link linkend="__header_8h_source_1l00019">19</link> of file <link linkend="__header_8h_source">Header.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+D:/Temp/PI/AulasPI/Aula 6 -Arrays/<link linkend="__header_8h">Header.h</link></section>
+</section>

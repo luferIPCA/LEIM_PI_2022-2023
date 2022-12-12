@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__strings_8c_source" xml:lang="en-US">
+<title>Strings.c</title>
+<indexterm><primary>D:/Temp/PI/AulasPI/Aula 6 -Arrays/Strings.c</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__strings_8c_source_1l00001"/>00001 <emphasis role="comment">/*****************************************************************/</emphasis>
+<anchor xml:id="__strings_8c_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__header_8h">Header.h</link>&quot;</emphasis>
+<anchor xml:id="__strings_8c_source_1l00009"/>00009 
+<anchor xml:id="__strings_8c_source_1l00010"/>00010 <emphasis role="preprocessor">#pragma&#32;region&#32;ARRAY_CHARS</emphasis>
+<anchor xml:id="__strings_8c_source_1l00011"/>00011 
+<anchor xml:id="__strings_8c_source_1l00019"/><link linkend="__header_8h_1a4a4b7eadce47aaaf72dd2b9f94eae19a">00019</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__strings_8c_1a4a4b7eadce47aaaf72dd2b9f94eae19a">inicializaArray</link>(<emphasis role="keywordtype">char</emphasis>&#32;n[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">char</emphasis>&#32;ch)&#32;{
+<anchor xml:id="__strings_8c_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;size;&#32;i++)&#32;{
+<anchor xml:id="__strings_8c_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;n[i]&#32;=&#32;ch;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//atenção&#32;que&#32;ainda&#32;não&#32;testei...</emphasis>
+<anchor xml:id="__strings_8c_source_1l00022"/>00022 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__strings_8c_source_1l00023"/>00023 }
+<anchor xml:id="__strings_8c_source_1l00024"/>00024 
+<anchor xml:id="__strings_8c_source_1l00025"/>00025 
+<anchor xml:id="__strings_8c_source_1l00034"/><link linkend="__header_8h_1a95a0363c9608b85f0a4c2c5088d5aab5">00034</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__strings_8c_1a95a0363c9608b85f0a4c2c5088d5aab5">ondeEstaChar</link>(<emphasis role="keywordtype">char</emphasis>&#32;v[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">char</emphasis>&#32;ch)&#32;{
+<anchor xml:id="__strings_8c_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;
+<anchor xml:id="__strings_8c_source_1l00036"/>00036 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(i&#32;&lt;&#32;size)&#32;{
+<anchor xml:id="__strings_8c_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(v[i]&#32;==&#32;ch)&#32;<emphasis role="keywordflow">return</emphasis>&#32;i;
+<anchor xml:id="__strings_8c_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__strings_8c_source_1l00039"/>00039 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__strings_8c_source_1l00040"/>00040 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;-1;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//se&#32;não&#32;existir&#32;devolve&#32;-1</emphasis>
+<anchor xml:id="__strings_8c_source_1l00041"/>00041 }
+<anchor xml:id="__strings_8c_source_1l00042"/>00042 
+<anchor xml:id="__strings_8c_source_1l00043"/><link linkend="__header_8h_1a8396d60bd2607c3f3e7b774ea21a8bc1">00043</link> <emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="__strings_8c_1a8396d60bd2607c3f3e7b774ea21a8bc1">existeChar</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;v1[],&#32;<emphasis role="keywordtype">char</emphasis>&#32;ch)&#32;{
+<anchor xml:id="__strings_8c_source_1l00044"/>00044 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;
+<anchor xml:id="__strings_8c_source_1l00045"/>00045 &#32;&#32;&#32;&#32;<emphasis role="comment">//int&#32;size&#32;=&#32;sizeof(v1);</emphasis>
+<anchor xml:id="__strings_8c_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>(v1[i]&#32;!=<emphasis role="charliteral">&apos;\0&apos;</emphasis>){&#32;<emphasis role="comment">//&#32;or&#32;&lt;&#32;size){</emphasis>
+<anchor xml:id="__strings_8c_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(v1[i]&#32;==&#32;ch)&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__strings_8c_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__strings_8c_source_1l00049"/>00049 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__strings_8c_source_1l00050"/>00050 }
+<anchor xml:id="__strings_8c_source_1l00051"/>00051 
+<anchor xml:id="__strings_8c_source_1l00060"/><link linkend="__strings_8c_1ae188f75305c70d2fbfe26d11d6d56deb">00060</link> <emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="__strings_8c_1ae188f75305c70d2fbfe26d11d6d56deb">existeCharI</link>(<emphasis role="keywordtype">char</emphasis>&#32;v[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keywordtype">char</emphasis>&#32;ch)&#32;{
+<anchor xml:id="__strings_8c_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;
+<anchor xml:id="__strings_8c_source_1l00062"/>00062 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(i&#32;&lt;&#32;size)&#32;{
+<anchor xml:id="__strings_8c_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(v[i]&#32;==&#32;ch)&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__strings_8c_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__strings_8c_source_1l00065"/>00065 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__strings_8c_source_1l00066"/>00066 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__strings_8c_source_1l00067"/>00067 }
+<anchor xml:id="__strings_8c_source_1l00068"/>00068 
+<anchor xml:id="__strings_8c_source_1l00076"/><link linkend="__header_8h_1ac46b192e720576aaeec8864ed0ad507b">00076</link> <emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="__strings_8c_1ac46b192e720576aaeec8864ed0ad507b">allChar</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;v1[],&#32;<emphasis role="keywordtype">char</emphasis>&#32;ch)&#32;{
+<anchor xml:id="__strings_8c_source_1l00077"/>00077 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>*&#32;aux&#32;=&#32;(<emphasis role="keywordtype">char</emphasis>*)malloc(<emphasis role="keyword">sizeof</emphasis>(v1)+1);&#32;&#32;&#32;&#32;<emphasis role="comment">//cria&#32;um&#32;array</emphasis>
+<anchor xml:id="__strings_8c_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0,j=0;
+<anchor xml:id="__strings_8c_source_1l00079"/>00079 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(v1[i]&#32;!=&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>)&#32;{&#32;
+<anchor xml:id="__strings_8c_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(v1[i]&#32;==&#32;ch)&#32;{
+<anchor xml:id="__strings_8c_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;aux[j++]&#32;=&#32;v1[i];
+<anchor xml:id="__strings_8c_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__strings_8c_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__strings_8c_source_1l00084"/>00084 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__strings_8c_source_1l00085"/>00085 &#32;&#32;&#32;&#32;aux[j]&#32;=&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+<anchor xml:id="__strings_8c_source_1l00086"/>00086 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;aux;
+<anchor xml:id="__strings_8c_source_1l00087"/>00087 }
+<anchor xml:id="__strings_8c_source_1l00088"/>00088 
+<anchor xml:id="__strings_8c_source_1l00089"/>00089 <emphasis role="preprocessor">#pragma&#32;endregion</emphasis>
+</programlisting></section>
