@@ -144,7 +144,11 @@
     <None Include="Dados.csv" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GereDadosc.c" />
     <ClCompile Include="ReadCSV.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Var.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

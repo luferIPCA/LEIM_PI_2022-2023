@@ -23,5 +23,13 @@
     <ClCompile Include="ReadCSV.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GereDadosc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Var.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
